@@ -30,7 +30,7 @@ get_header();
 				array(
 					'taxonomy' => 'papel', // Your custom taxonomy
 					'field'    => 'slug', // Use 'slug' to filter by slug
-					'terms'    => 'professores', // The slug for 'Professores'
+					'terms'    => 'tltl', // The slug for 'Professores'
 				),
 			),
 		);
@@ -68,7 +68,7 @@ get_header();
 				array(
 					'taxonomy' => 'papel', // Your custom taxonomy
 					'field'    => 'slug', // Use 'slug' to filter by slug
-					'terms'    => 'tltl', // The slug for 'Professores'
+					'terms'    => 'professores', // The slug for 'Professores'
 				),
 			),
 		);
@@ -94,18 +94,7 @@ get_header();
     </div>
 </div>
 
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
-        gap: 20px; /* Adjust spacing between items */
-    }
-    .grid-item {
-        border: 1px solid #ccc; /* Optional styling */
-        padding: 10px; /* Optional styling */
-        text-align: center; /* Center text */
-    }
-</style>
+
 
 <?php
 get_footer();
