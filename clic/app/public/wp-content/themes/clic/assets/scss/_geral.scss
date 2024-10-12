@@ -1,0 +1,29 @@
+* {
+    // font-family: "Poppins", sans-serif;
+}
+.ir{
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+img {
+    display: block;
+
+}
+iframe{
+    width: 100%;
+}
+body {
+    font-family: $helvetica;
+    background: #F4F4F5;
+}
+main{
+    padding-bottom: 70px;
+}
+a {
+    text-decoration: none;
+}
+strong{
+    font-weight: bold;
+}

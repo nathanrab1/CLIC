@@ -1,0 +1,147 @@
+// Definir toda a paleta de Cores
+$branco: #ffffff;
+$preto: #101010;
+$laranja: #F07D22;
+$vermelho: #E41E26;
+$vermelho-claro: #E7494F;
+$amarelo: #FFED00;
+$verde: #87BF40;
+$verde2: #138B6C;
+$azul: #13A1CA;
+$roxo: #512971;
+$roxo-claro: #72528B;
+$rosa: #E61365;
+$rosa-claro: #E94082;
+$cinza: #CFCFCF;
+
+$cores: (
+  'branco': $branco,
+  'preto': $preto,
+  'laranja': $laranja,
+  'vermelho': $vermelho,
+  'vermelho-claro': $vermelho-claro,
+  'amarelo': $amarelo,
+  'verde': $verde,
+  'verde2': $verde2,
+  'azul': $azul,
+  'roxo-claro': $roxo-claro,
+  'roxo': $roxo,
+  'rosa': $rosa,
+  'rosa-claro': $rosa-claro,
+  'cinza': $cinza
+);
+
+// Mixin para gerar as classes de texto e background
+@mixin cor-classes($nome, $cor) {
+  .t-#{$nome} {
+    color: $cor;
+  }
+  .bg-#{$nome} {
+    background-color: $cor;
+  }
+}
+
+// Loop para aplicar o mixin a todas as cores
+@each $nome, $cor in $cores {
+  @include cor-classes($nome, $cor);
+}
+
+
+
+
+// Definir as principais telas
+$maxHeightMobileSmall: 351px;
+$smallMobile: 320px;
+$iphone4: 480px;
+$android: 360px;
+$mobile: 560px;
+$tablet: 700px;
+$desktop: 990px;
+$medDesktop: 1240px;
+$bigDesktop: 1440px;
+$maxDesktop: 1920px;
+$wpAdminBar: 783px;
+
+//Apenas muito pequenos
+@mixin max-sm {
+    @media (max-width: #{$maxHeightMobileSmall}) {
+        @content;
+    }
+}
+
+//Altura iPhone 4
+@mixin ip4 {
+    @media (max-height: #{$iphone4}) {
+        @content;
+    }
+}
+
+
+
+// SmallMobile
+@mixin sm {
+    @media (min-width: #{$smallMobile}) {
+        @content;
+    }
+}
+
+// Android
+@mixin ad {
+    @media (min-width: #{$android}) {
+        @content;
+    }
+}
+
+// Mobile
+@mixin mb {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+
+// Tablet
+@mixin tb {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+// Desktop Pequeno
+@mixin dk-pq {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+// Desktop Médio
+@mixin dk-md {
+    @media (min-width: #{$medDesktop}) {
+        @content;
+    }
+}
+
+// Desktop Grande
+@mixin dk-xl {
+    @media (min-width: #{$bigDesktop}) {
+        @content;
+    }
+}
+
+// Desktop Máximo
+@mixin dk-max {
+    @media (min-width: #{$maxDesktop}) {
+        @content;
+    }
+}
+
+// Admin Bar Wordpress altera sua altura a partir de 823px
+@mixin admin-bar {
+    @media (min-width: #{$wpAdminBar}) {
+        @content;
+    }
+}
+
+
+//fontes
+
+
