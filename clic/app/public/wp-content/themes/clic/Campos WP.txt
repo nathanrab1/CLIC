@@ -1,0 +1,19 @@
+Campos WP
+Titulo
+Imagem Destacada (thumb) - Aparece apenas na lista posts
+Resumo (parágrafo pequeno)
+
+
+Campos ACF
+Imagem Hero - aparece em cima de todo conteudo
+Descrição
+Duração
+Anos
+Habilidades BNCC
+Mapa da unidade
+Cartão de Atividades
+Cartão de Recursos
+Vídeo curto
+Vídeo longo
+Slide deck
+Links
