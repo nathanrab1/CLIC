@@ -17,7 +17,7 @@ get_header();
 ?>
 
 <h1 class="t-1 t-verde"><?php the_title();?></h1>
-<h2 class="t-3 t-vermelho"><?php the_content();?></h2>	
+<h2 class="t-3 t-principal"><?php the_content();?></h2>	
 
 <div class="participants-grid">
     

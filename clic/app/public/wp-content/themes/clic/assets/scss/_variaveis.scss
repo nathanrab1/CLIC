@@ -13,6 +13,7 @@ $roxo-claro: #72528B;
 $rosa: #E61365;
 $rosa-claro: #E94082;
 $cinza: #CFCFCF;
+$principal: #09ff00;
 
 $cores: (
   'branco': $branco,
@@ -28,7 +29,8 @@ $cores: (
   'roxo': $roxo,
   'rosa': $rosa,
   'rosa-claro': $rosa-claro,
-  'cinza': $cinza
+  'cinza': $cinza,
+  'principal': $principal  
 );
 
 // Mixin para gerar as classes de texto e background

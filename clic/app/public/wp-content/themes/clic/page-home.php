@@ -26,7 +26,7 @@ get_header();
 
        
             <a href="<?php bloginfo('url')?>/teste">Pagina teste</a>
-
+            <a href="<?php bloginfo('url')?>/unidades">Unidades</a>
     </section>
 </div>
 
