@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -101,11 +102,11 @@ table {
 }
 
 .t-verde {
-  color: #87BF40;
+  color: #9bc73f;
 }
 
 .bg-verde {
-  background-color: #87BF40;
+  background-color: #9bc73f;
 }
 
 .t-verde2 {
@@ -133,11 +134,11 @@ table {
 }
 
 .t-roxo {
-  color: #512971;
+  color: #352e49;
 }
 
 .bg-roxo {
-  background-color: #512971;
+  background-color: #352e49;
 }
 
 .t-rosa {
@@ -392,6 +393,74 @@ strong {
   border: 1px solid #ccc; /* Optional styling */
   padding: 10px; /* Optional styling */
   text-align: center; /* Center text */
+}
+
+.unidade-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text within items */
+  margin: 0 auto; /* Center the container itself */
+  background-color: #ffffff;
+}
+
+.unidade-grid-container {
+  display: flex;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text within ite
+grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Adjust spacing between items */
+}
+
+.unidade-grid-item {
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  text-align: center; /* Center text */
+}
+
+.unidade-grid-item {
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  text-align: center; /* Center text */
+  width: 100px;
+}
+
+.unidade-título {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  color: #9bc73f;
+}
+
+.unidade-paragrafo {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.unidade-mapa {
+  color: #9bc73f;
+  margin-bottom: 20px;
+}
+
+.unidade-habilidades {
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.unidade-habilidades p {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 label {
