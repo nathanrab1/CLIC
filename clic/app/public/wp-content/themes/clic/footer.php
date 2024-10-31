@@ -12,7 +12,17 @@
 ?>
 
 
+
 <?php wp_footer(); ?>
+
+
+<script>
+		(function($) {
+			
+		})(jQuery);
+</script>
+
+
 
 </body>
 </html>

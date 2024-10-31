@@ -1,81 +1,234 @@
+//header
+.header-container{
+  position: fixed;
+  width: 100%;
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
-        gap: 20px; /* Adjust spacing between items */
-    }
-    .grid-item {
-        border: 1px solid #ccc; /* Optional styling */
-        padding: 10px; /* Optional styling */
-        text-align: center; /* Center text */
-    }
-
-    .unidade-container {
-      display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;    /* Center horizontally */
-      text-align: center;     /* Center text within items */
-      margin: 0 auto;        /* Center the container itself */ 
-      background-color: $branco;
-    }
-
-    .unidade-grid-container {
-      display: flex;
-      align-items: center;    /* Center horizontally */
-      text-align: center;     /* Center text within ite
-      grid-template-columns: repeat(4, 1fr); /* 4 columns */
-      gap: 20px; /* Adjust spacing between items */
+  nav ul {
+  display: flex;
+  flex-direction:row;
+  background-color: $roxo-claro;
+  
+  transition: background ease 1s;
+  background-color: $roxo-claro;
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
   }
 
-  .unidade-grid-item {
-    border: 1px solid #ccc; /* Optional styling */
-    padding: 10px; /* Optional styling */
-    text-align: center; /* Center text */
-  }
-
-    .unidade-grid-item {
-      border: 1px solid #ccc; /* Optional styling */
-      padding: 10px; /* Optional styling */
-      text-align: center; /* Center text */
-      width: 100px;
-  }
-
-    .unidade-título {
-      text-align: center;
-      justify-content: center;
-      width: 50%;
-      padding: 10px;
-      color: $verde;
-    }
-
-    .unidade-paragrafo {
-      text-align: center;
-      justify-content: center;
-      width: 50%;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-
-    .video-container {
-      width: 50%;
-      margin-bottom: 20px;
-     
-    }
-
-    .unidade-mapa {
-      color: $verde;
-      margin-bottom: 20px;
-    }
-
-    .unidade-habilidades {
-      text-align: justify;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      width: 60%;
-    }
-
-    .unidade-habilidades p {
+  &>li:hover{
+    .sub-menu{
+      display: block;
       
-      margin-bottom: 20px;
-      margin-top: 20px;
     }
+  }
+  
+  }
+}
+
+
+
+
+
+.header-container a {
+  display: block;
+  padding: 10px 20px;
+  
+  background-color: $roxo-claro;
+  transition: background ease 1s;
+  &:hover{
+    background-color: yellow;
+  }
+
+}
+
+
+// Page-home
+
+.home-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center horizontally */
+  text-align: center;     /* Center text within items */
+  margin: 0 auto;        /* Center the container itself */ 
+  background-color: $branco;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+
+.home-titulo {
+  text-align: center;
+  justify-content: center;
+  width: 70%;
+  max-width: 600px;
+  padding: 10px;
+ 
+}
+
+.home-paragrafo {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+// Page-unidade
+
+.unidade-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center horizontally */
+  text-align: center;     /* Center text within items */
+  margin: 0 auto;        /* Center the container itself */ 
+  background-color: $branco;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+
+.unidade-título {
+  text-align: center;
+  justify-content: center;
+  width: 70%;
+  max-width: 600px;
+  padding: 10px;
+ 
+
+
+}
+
+.unidade-paragrafo {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  @include dk-pq {
+    max-width: 800px;
+  }
+}
+
+.video-container iframe {
+  
+    height: auto;
+    @include dk-pq {
+      height: 500px;
+    }
+
+}
+
+.unidade-mapa {
+  color: $verde;
+  margin-bottom: 20px;
+}
+
+.unidade-mapa img {
+  max-width: 100%; /* Prevents the image from exceeding the width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.unidade-anos {
+
+}
+
+.unidade-anos h2 {
+  color: $verde;
+  margin-bottom: 10px;
+}
+
+.unidade-anos p {
+  color: $preto;
+  margin-bottom: 10px;
+}
+
+.unidade-habilidades {
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 60%;
+}
+
+.unidade-habilidades h2{
+text-align: center;
+color: $verde;
+}
+
+.unidade-habilidades p {
+  
+}
+
+.unidade-habilidades p {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.ideias-centrais {
+  align-items: center;
+  width: 60%;
+}
+
+
+
+.ideias-centrais h2 {
+  text-align: center;
+  margin-bottom: 5px;
+
+}
+
+.ideias-centrais span{
+  text-align: justify;
+  margin-bottom: 30px;
+  display: list-item; /* This has to be "list-item"                                          */
+  margin-left : 1em;  /* If you use default list-style-position 'outside', you may need this */
+
+}
+
+
+.unidade-grid-container {
+  display: flex;
+  align-items: center;    /* Center horizontally */
+  text-align: center;     /* Center text within ite
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Adjust spacing between items */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.unidade-grid-item {
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  text-align: center; /* Center text */
+  width: 200px;
+  min-height: 500px;
+  align-items: stretch;
+}
+
+.unidade-grid-item iframe {
+  width: 80%;
+  height: auto;
+}
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Adjust spacing between items */
+}
+.grid-item {
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  text-align: center; /* Center text */
+}

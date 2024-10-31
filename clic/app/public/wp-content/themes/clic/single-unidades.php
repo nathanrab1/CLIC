@@ -14,7 +14,7 @@ get_header();
 
     <!-- Título------->
     <?php if(get_field('titulo')):?>
-        <h2 class="t-1 t-azul unidade-título"><?php echo get_field('titulo'); ?></h2>
+        <h2 class="t-2 t-azul unidade-título"><?php echo get_field('titulo'); ?></h2>
     <?php endif;?>
 
     <!-- Parágrafo Curto------------------------------------------->
@@ -24,12 +24,12 @@ get_header();
 
     <!-- Vídeo Curto --------------------------------------------->
     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <!-- Mapa da unidade------------------------------------>
     <div class="unidade-mapa">
-        <h2 class="t-2">Mapa da Unidade</h2>
+        <h2 class="t-3">Mapa da Unidade</h2>
         <?php 
         $image = get_field('mapa_da_unidade');
         if( !empty( $image ) ): ?>
@@ -39,24 +39,29 @@ get_header();
     </div>
 
     <!-- Anos----------------------------------------------------->
-    <h2 class="t-2 t-azul">Anos</h2>
-    <p class="t-3 t-preto"><?php echo get_field('anos'); ?></p>
+    <div class="unidade-anos">
+        <h2 class="t-3">Anos</h2>
+        <p class="t-3"><?php echo get_field('anos'); ?></p>
+    </div>
 
     <!-- Habilidades BNCC----------------------------------->
-    <h2 class="t-2 t-azul">Habilidades BNCC</h2>
-    <h2 class="t-3 t-preto unidade-habilidades"><?php echo get_field('habilidades_bncc'); ?></h2>
+    <div class="unidade-habilidades">
+        <h2 class="t-3">Habilidades BNCC</h2>
+        <p class="t-4"><?php echo get_field('habilidades_bncc'); ?></p>
+    </div>    
 
     <!-- Ideias Centrais----------------------------------->
-    <h2 class="t-2 t-azul">Ideias Centrais</h2>
-    <h2 class="t-3 t-preto"><?php echo get_field('ideias_centrais'); ?></h2>
-
+    <div class="ideias-centrais">
+        <h2 class="t-3 t-verde">Ideias Centrais</h2>
+        <h3 class="t-4 t-preto"><?php echo get_field('ideias_centrais'); ?></h3>
+    </div>
     <!-- Encontros ------------------------------->
 
     <div class="unidade-grid-container">
 
         <!-- Encontro 1-------------------------------------------------------->
         <?php if ( get_field( 'check_encontro_1' ) == 1 ) : ?>
-            <div class="grid-item">
+            <div class="unidade-grid-item">
                 <h2>Encontro 1</h2>
                 
                 <!-- Vídeo Encontro 1--------->
@@ -105,7 +110,7 @@ get_header();
 
         <!-- Encontro 2-------------------------------------------------------->
         <?php if ( get_field( 'check_encontro_1' ) == 1 ) : ?>
-            <div class="grid-item">
+            <div class="unidade-grid-item">
                 <h2>Encontro 2</h2>
                 
                 <!-- Vídeo Encontro 1--------->
@@ -154,7 +159,7 @@ get_header();
 
         <!-- Encontro 3-------------------------------------------------------->
         <?php if ( get_field( 'check_encontro_3' ) == 1 ) : ?>
-            <div class="grid-item">
+            <div class="unidade-grid-item">
                 <h2>Encontro 3</h2>
                 
                 <!-- Vídeo Encontro 1--------->

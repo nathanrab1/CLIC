@@ -21,7 +21,7 @@ get_header();
 
 <div class="participants-grid">
     
-    <h1>TLT Lab</h1>
+  
 	<div class="grid-container">
 		<?php
 		// WP Query to fetch unidades
@@ -34,9 +34,12 @@ get_header();
 		if ($unidades->have_posts()) :
 			while ($unidades->have_posts()) : $unidades->the_post(); ?>
 				<div class="grid-item">
-					<?php if (has_post_thumbnail()) {
-						the_post_thumbnail('medium'); // Adjust size as needed
-					} ?>
+
+				<?php 
+					$image = get_field('imagem_destaque');
+					if( !empty( $image ) ): ?>
+						<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+					<?php endif; ?>
 					<h2><?php the_title(); ?></h2>
 					<p><?php the_excerpt(); ?></p>
 					<a href=<?php the_permalink(); ?>>Overview</a>
@@ -47,6 +50,7 @@ get_header();
 		<?php endif; ?>
 	</div>
 </div>
+
 
 
 

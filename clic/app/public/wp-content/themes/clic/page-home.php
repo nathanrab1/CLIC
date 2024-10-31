@@ -14,22 +14,27 @@
 
 get_header();
 ?>
-<h1 class="t-1 t-verde"><?php the_title();?></h1>
-<div class="wrapper">
-    <section class="destaque">
-        <?php $destaque_imagem = get_field( 'destaque_imagem' ); ?>
-        <?php if ( $destaque_imagem ) : ?>
-            <img style="width: initial;" src="<?php echo esc_url( $destaque_imagem['url'] ); ?>" alt="<?php echo esc_attr( $destaque_imagem['alt'] ); ?>" />
-        <?php endif; ?>
+
+<div class="home-container">
+
+    <div class="home-titulo">
+        <h1 class="t-1 t-azul"><?php the_title();?></h1>
+    </div>
+
+        <!-- Parágrafo Curto------------------------------------------->
+    <?php if(get_field('paragrafo_sobre_o_projeto')):?>
+        <h2 class="t-4 t-preto home-paragrafo"><?php echo get_field('paragrafo_sobre_o_projeto'); ?></h2>
+    <?php endif;?>
+
+
+    <div class="video-container">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_apresentacao'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
         
-        <?php the_field( 'texto_destaque' ); ?>
-
-       
-            <a href="<?php bloginfo('url')?>/teste">Pagina teste</a>
-            <a href="<?php bloginfo('url')?>/unidades">Unidades</a>
-    </section>
+    <a href="<?php bloginfo('url')?>/teste">Pagina teste</a>
+    <a href="<?php bloginfo('url')?>/unidades">Unidades</a>
+    
 </div>
-
 
 <?php
 get_footer();
