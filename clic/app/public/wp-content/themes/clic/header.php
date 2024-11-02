@@ -24,18 +24,29 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<div class="header-container">
-	<nav>	
-		<ul>
-			<li><a href="<?php bloginfo('url')?>">Home</a></li>
-			<li><a href="<?php bloginfo('url')?>/sobre">Sobre o CLIC</a></li>
-			<li><a href="<?php bloginfo('url')?>/unidades">Unidades</a>
-				<ul class="sub-menu">
-					<li><a href="<?php bloginfo('url')?>/unidades/regionalizacao-das-americas/">Unidade 1</a></li>
-					<li><a href="<?php bloginfo('url')?>/unidades/regionalizacao-da-europa/">Unidade 2</a></li>
-				</ul>
-			</li>
-			<li><a href="<?php bloginfo('url')?>/equipe">Equipe</a></li>
-		</ul>
-	</nav>
-</div>
+<header>
+
+	<div class="header-container">
+
+		<div class="topo-menu">
+			<button class="bt-menu">Menu</button>
+			<h1><a href="<?php bloginfo('url')?>" class="ir logo" >CLIC</a></h1>
+		</div>
+
+		<nav>	
+			<ul>
+				<li><a href="<?php bloginfo('url')?>">Home</a></li>
+				<li><a href="<?php bloginfo('url')?>/sobre">Sobre o CLIC</a></li>
+				<li class="sub" ><a href="<?php bloginfo('url')?>/unidades">Unidades</a>
+					<ul class="sub-menu">
+						<li><a href="<?php bloginfo('url')?>/unidades/regionalizacao-das-americas/">Unidade 1</a></li>
+						<li><a href="<?php bloginfo('url')?>/unidades/regionalizacao-da-europa/">Unidade 2</a></li>
+					</ul>
+				</li>
+				<li><a href="<?php bloginfo('url')?>/equipe">Equipe</a></li>
+			</ul>
+		</nav>
+
+	</div>
+</header>
+<main>
