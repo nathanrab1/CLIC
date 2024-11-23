@@ -3,12 +3,16 @@
 header{
     position: fixed;
     width: 100%;
+    top: 0;
+    z-index: 9999;
+    box-shadow: #0000001a 0 11px 20px;
+    background: $branco;
     .header-container{
         @include dk-pq {
             display: flex;
             flex-flow: row wrap;
             padding: 0px 5%;
-            background-color: $roxo-claro;  
+            background-color: $branco;  
             justify-content: space-between;
             align-items: center;
         }
@@ -18,8 +22,7 @@ header{
     .topo-menu {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-        background-color: $roxo-claro;    
+        justify-content: space-between;  
         padding: 10px 5%;
         width: 100%;
         box-sizing: border-box;
@@ -48,10 +51,10 @@ header{
     }
 
     .logo{
-        background: url(../imgs/logo.svg) no-repeat;
+        background: url(../imgs/logo-clic.svg) no-repeat;
         background-size: 100%;
-        width: 27px;
-        height: 27px;
+        width: 77px;
+        height: 46px;
     }
     
    
@@ -91,26 +94,31 @@ header{
             } 
             li {
                 @include dk-pq {
-                    padding: 15px 0;
+                    padding: 20px 0;
                 }
                 &:hover{
+                  &>a{
                     @include dk-pq {
-                        background-color: $roxo-claro;
+                        color: $vermelho;
                     }
+                  }
                 }
                 &.sub{
                     position: relative;
                     &:hover{
                         .sub-menu{
-                            display: block;
+                            display: none;
+                            @include dk-pq{
+                                display: block;    
+                            }
                 
                         }
                     }
                     .sub-menu{
                         display: none;
                         position: absolute;
-                        top: 46px;
-                        background: #613b7e;
+                        top: 56px;
+                        background: #e3e3e3;
                         left: calc(50% - 75px);
                         width: 150px;
                         text-align: center;
@@ -120,7 +128,7 @@ header{
                     }
                 }
                 a {
-                    color: aquamarine;
+                    color: $azul;
                 }
             }
         }

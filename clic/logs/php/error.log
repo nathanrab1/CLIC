@@ -34,3 +34,5 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\single-unidades.php on line 48
 [24-Oct-2024 02:38:13 UTC] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\single-unidades.php on line 17
+[23-Nov-2024 00:19:18 UTC] PHP Parse error:  syntax error, unexpected identifier "version" in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\header.php on line 51
+[23-Nov-2024 00:19:20 UTC] PHP Parse error:  syntax error, unexpected identifier "version" in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\header.php on line 51

@@ -31,6 +31,39 @@
 }
 
 
+//Page Sobre
+
+
+.sobre-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* Center horizontally */
+  text-align: center;     /* Center text within items */
+  margin: 0 auto;        /* Center the container itself */ 
+  background-color: $branco;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+
+.sobre-titulo {
+  text-align: center;
+  justify-content: center;
+  width: 70%;
+  max-width: 600px;
+  padding: 10px;
+ 
+ 
+}
+
+.sobre-paragrafo {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 
 // Page-unidade
 
@@ -193,3 +226,6 @@ color: $verde;
   padding: 10px; /* Optional styling */
   text-align: center; /* Center text */
 }
+
+
+
