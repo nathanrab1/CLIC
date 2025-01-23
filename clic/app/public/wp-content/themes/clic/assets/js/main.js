@@ -8,7 +8,7 @@ jQuery.noConflict();
         $("nav").toggleClass("nav-open");
     })
 
-    $(".unidade-encontro-title").on("click", function(){ 
+    $(".encontro-title").on("click", function(){ 
         $(this).siblings(".unidade-encontro-content").slideToggle();
     })
 

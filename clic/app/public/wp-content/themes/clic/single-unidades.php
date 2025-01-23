@@ -55,24 +55,24 @@ get_header();
         <h2 class="t-3 t-verde">Ideias Centrais</h2>
         <h3 class="t-4 t-preto"><?php echo get_field('ideias_centrais'); ?></h3>
     </div>
-    <!-- Encontros ------------------------------->
 
+    <!-- Encontros ------------------------------->
     <?php if ( have_rows( 'encontros' ) ) :
         $count = 1; 
     ?>
         <ul class="lista-encontros">
         <?php while ( have_rows( 'encontros' ) ) : the_row(); ?>
-            <li class="unidade-container-encontro">
-                <div class="unidade-encontro-title">
+            <li class="encontro-container">
+                <div class="encontro-title">
                     <h1>Encontro <?php echo $count; $count++;?></h1>
                 </div>
                 <div class="unidade-encontro-content">
                     
                     <h2><?php echo get_sub_field( 'titulo' ); ?></h2>  
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_sub_field( 'codigo_youtube' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-                    <div class="wysiwyg"><?php echo get_sub_field( 'objetivos' ); ?></div>
-                    <div class="wysiwyg"><?php echo get_sub_field( 'principais_etapas' ); ?></div>
-                    <div class="wysiwyg"><?php echo get_sub_field( 'materiais_e_ferramentas' ); ?></div>
+                    <div class="encontro-objetivo"><?php echo get_sub_field( 'objetivos' ); ?></div>
+                    <div class="encontro-etapa"><?php echo get_sub_field( 'principais_etapas' ); ?></div>
+                    <div class="encontro-materiais"><?php echo get_sub_field( 'materiais_e_ferramentas' ); ?></div>
 
                 </div>
             </li>
