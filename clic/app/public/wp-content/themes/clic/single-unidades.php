@@ -57,161 +57,30 @@ get_header();
     </div>
     <!-- Encontros ------------------------------->
 
-    <div class="unidade-grid-container">
+    <?php if ( have_rows( 'encontros' ) ) :
+        $count = 1; 
+    ?>
+        <ul class="lista-encontros">
+        <?php while ( have_rows( 'encontros' ) ) : the_row(); ?>
+            <li class="unidade-container-encontro">
+                <div class="unidade-encontro-title">
+                    <h1>Encontro <?php echo $count; $count++;?></h1>
+                </div>
+                <div class="unidade-encontro-content">
+                    
+                    <h2><?php echo get_sub_field( 'titulo' ); ?></h2>  
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_sub_field( 'codigo_youtube' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                    <div class="wysiwyg"><?php echo get_sub_field( 'objetivos' ); ?></div>
+                    <div class="wysiwyg"><?php echo get_sub_field( 'principais_etapas' ); ?></div>
+                    <div class="wysiwyg"><?php echo get_sub_field( 'materiais_e_ferramentas' ); ?></div>
 
-        <!-- Encontro 1-------------------------------------------------------->
-        <?php if ( get_field( 'check_encontro_1' ) == 1 ) : ?>
-            <div class="unidade-grid-item">
-                <h2>Encontro 1</h2>
-                
-                <!-- Vídeo Encontro 1--------->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_encontro_1'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                <!-- Objetivos Encontro 1--------->
-                <h3><?php the_field( 'objetivos_encontro_1' ); ?></h3>
-                <br>
-                
-                <!-- Cartão de Atividades Encontro 1--------->
-                <?php 
-                $link = get_field('cartao_de_atividades_encontro_1');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-                <br>
-
-                <!-- Cartão de Recursos Encontro 1--------->
-                <?php 
-                $link = get_field('cartao_de_recursos_encontro_1');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-                <br>
-
-                <!-- Guia de Preparação do Encontro 1--------->
-                <?php 
-                $link = get_field('guia_de_preparacao_do_encontro_1');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-            </div>
-        <?php endif; ?>
-
-        <!-- Encontro 2-------------------------------------------------------->
-        <?php if ( get_field( 'check_encontro_1' ) == 1 ) : ?>
-            <div class="unidade-grid-item">
-                <h2>Encontro 2</h2>
-                
-                <!-- Vídeo Encontro 1--------->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_encontro_2'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                <!-- Objetivos Encontro 1--------->
-                <h3><?php the_field( 'objetivos_encontro_2' ); ?></h3>
-                <br>
-                
-                <!-- Cartão de Atividades Encontro 1--------->
-                <?php 
-                $link = get_field('cartao_de_atividades_encontro_2');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-                <br>
-
-                <!-- Cartão de Recursos Encontro 1--------->
-                <?php 
-                $link = get_field('cartao_de_recursos_encontro_2');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-                <br>
-
-                <!-- Guia de Preparação do Encontro 1--------->
-                <?php 
-                $link = get_field('guia_de_preparacao_do_encontro_2');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-            </div>
-        <?php endif; ?>
-
-        <!-- Encontro 3-------------------------------------------------------->
-        <?php if ( get_field( 'check_encontro_3' ) == 1 ) : ?>
-            <div class="unidade-grid-item">
-                <h2>Encontro 3</h2>
-                
-                <!-- Vídeo Encontro 1--------->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_encontro_3'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                <!-- Objetivos Encontro 1--------->
-                <h3><?php the_field( 'objetivos_encontro_3' ); ?></h3>
-                <br>
-                
-                <!-- Cartão de Atividades Encontro 1--------->
-                <?php 
-                $link = get_field('cartao_de_atividades_encontro_3');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-                <br>
-
-                <!-- Cartão de Recursos Encontro 1--------->
-                <?php 
-                $link = get_field('cartao_de_recursos_encontro_3');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-                <br>
-
-                <!-- Guia de Preparação do Encontro 1--------->
-                <?php 
-                $link = get_field('guia_de_preparacao_do_encontro_3');
-                if( $link ): 
-                    $link_url = $link['url'];
-                    $link_title = $link['title'];
-                    $link_target = $link['target'] ? $link['target'] : '_self';
-                    ?>
-                    <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-                <?php endif; ?>
-            </div>
-        <?php endif; ?>
-        
-
-
-
-
-
-    </div>
+                </div>
+            </li>
+        <?php endwhile; ?>
+        </ul>
+    <?php else : ?>
+	    <?php // No rows found ?>
+    <?php endif; ?>
 
 </div>
 <?php

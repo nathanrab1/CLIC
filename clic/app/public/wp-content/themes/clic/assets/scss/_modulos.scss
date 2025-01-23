@@ -7,8 +7,7 @@
   text-align: center;     /* Center text within items */
   margin: 0 auto;        /* Center the container itself */ 
   background-color: $branco;
-  width: 100vw;
-  padding-top: 40px;
+  width: 100%;
 }
 
 
@@ -208,9 +207,6 @@ color: $verde;
 }
 
 
-
-
-
 .grid-container {
   display: flex;
  flex-flow: column; /* 4 columns */
@@ -227,5 +223,21 @@ color: $verde;
   text-align: center; /* Center text */
 }
 
+.unidade-container-encontro {
+  
+}
 
+.unidade-encontro-title{
+  border: 1px solid #ccc;
+  height: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 80vw;
+}
 
+.unidade-encontro-content{
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px 20px;
+  width: 80vw;
+}

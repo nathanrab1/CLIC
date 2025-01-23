@@ -46,7 +46,7 @@ get_header();
 				</div>
 			<?php endwhile;
 		else : ?>
-			<p>No unidades found.</p>
+			<p>Nenhum resultado para a sua busca.</p>
 		<?php endif; ?>
 	</div>
 </div>

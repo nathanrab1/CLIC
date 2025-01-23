@@ -19,11 +19,19 @@ body {
     background: #F4F4F5;
 }
 main{
-    padding-bottom: 70px;
+    padding-top: 66px;
+    min-height: calc(100vh - 136px);    
+    
 }
 a {
     text-decoration: none;
 }
 strong{
     font-weight: bold;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
 }

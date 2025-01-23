@@ -165,6 +165,14 @@ table {
   background-color: #CFCFCF;
 }
 
+.t-cinza-escuro {
+  color: #959595;
+}
+
+.bg-cinza-escuro {
+  background-color: #959595;
+}
+
 .t-principal {
   color: #09ff00;
 }
@@ -372,7 +380,8 @@ body {
 }
 
 main {
-  padding-bottom: 70px;
+  padding-top: 66px;
+  min-height: calc(100vh - 136px);
 }
 
 a {
@@ -383,6 +392,12 @@ strong {
   font-weight: bold;
 }
 
+.wrapper {
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
 .home-container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -390,8 +405,7 @@ strong {
   text-align: center; /* Center text within items */
   margin: 0 auto; /* Center the container itself */
   background-color: #ffffff;
-  width: 100vw;
-  padding-top: 40px;
+  width: 100%;
 }
 
 .home-titulo {
@@ -579,6 +593,51 @@ grid-template-columns: repeat(4, 1fr); /* 4 columns */
   text-align: center; /* Center text */
 }
 
+.unidade-encontro-title {
+  border: 1px solid #ccc;
+  height: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 80vw;
+}
+
+.unidade-encontro-content {
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px 20px;
+  width: 80vw;
+}
+
+footer {
+  width: 100%; /* Frame 1 */
+  box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
+}
+footer ul {
+  /* Auto layout */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 39px;
+}
+@media (min-width: 990px) {
+  footer ul {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+footer ul li {
+  flex-grow: 1;
+}
+footer ul li a {
+  display: block;
+  width: 100%;
+}
+footer ul li a img {
+  width: 100%;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -595,6 +654,7 @@ header {
     background-color: #ffffff;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
 }
 header .topo-menu {
@@ -618,7 +678,7 @@ header .topo-menu .bt-menu {
   border: 0;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
+  color: #292929;
 }
 @media (min-width: 990px) {
   header .topo-menu .bt-menu {
@@ -637,10 +697,10 @@ header .logo {
 header nav {
   position: absolute;
   padding: 5%;
-  background: #4d395c;
+  background: #CFCFCF;
   padding: 20px 5%;
   left: -50vw;
-  top: 47px;
+  top: 66px;
   width: 50vw;
   box-sizing: border-box;
   height: calc(100vh - 47px);

@@ -5,8 +5,11 @@ jQuery.noConflict();
 
 
     $(".bt-menu").on("click", function(){ 
-        console.log("Hello world");
         $("nav").toggleClass("nav-open");
+    })
+
+    $(".unidade-encontro-title").on("click", function(){ 
+        $(this).siblings(".unidade-encontro-content").slideToggle();
     })
 
 
