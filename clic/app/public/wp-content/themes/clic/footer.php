@@ -13,7 +13,7 @@
 
 </main>
 
-<footer class="bg-branco-claro wrapper">
+<footer class="bg-branco wrapper">
 <?php if ( have_rows( 'footer__logos', 'option' ) ) : ?>
 	<ul>
         <?php while ( have_rows( 'footer__logos', 'option' ) ) : the_row(); ?>

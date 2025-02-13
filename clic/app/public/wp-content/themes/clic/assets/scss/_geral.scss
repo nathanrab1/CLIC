@@ -17,10 +17,12 @@ iframe{
 body {
     font-family: $helvetica;
     background: #F4F4F5;
+    min-height:100vh;
 }
 main{
     padding-top: 66px;
-    min-height: calc(100vh - 136px);    
+    min-height: calc(100vh - 145px);
+    background-color: $branco;    
     
 }
 a {
@@ -31,7 +33,15 @@ strong{
 }
 
 .wrapper{
-    width: 100%;
+    width:100%;
     padding: 0 5%;
     box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    ul{
+        width: 168px;
+    }
+    
 }

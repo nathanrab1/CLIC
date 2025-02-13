@@ -1,4 +1,5 @@
 footer {
+    box-flex-group: $branco;
     width: 100%;/* Frame 1 */
     box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
     ul {
@@ -9,6 +10,7 @@ footer {
         align-items: center;
         padding: 10px 0px;
         gap: 39px;
+        width: 168px;
         @include dk-pq{
             max-width: 350px;
             margin: 0 auto;

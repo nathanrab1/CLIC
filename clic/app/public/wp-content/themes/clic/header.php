@@ -30,7 +30,7 @@
 
 		<div class="topo-menu">
 			<button class="bt-menu">Menu</button>
-			<h1><a href="<?php bloginfo('url')?>" class="ir logo" >CLIC</a></h1>
+			<h1><a href="<?php bloginfo('url')?>" class="ir logo-header" >CLIC</a></h1>
 		</div>
 
 		<nav>	
