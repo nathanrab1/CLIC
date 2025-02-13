@@ -5,7 +5,7 @@ header{
     width: 100%;
     top: 0;
     z-index: 9999;
-    box-shadow: #0000001a 0 11px 20px;
+    // box-shadow: #0000001a 0 11px 20px;
     background: $branco;
     .header-container{
         @include dk-pq {

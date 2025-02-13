@@ -8,6 +8,9 @@
   margin: 0 auto;        /* Center the container itself */ 
   background-color: $branco;
   width: 100%;
+  .video-container{
+    padding: 30px 0;
+  }
 }
 
 
@@ -18,9 +21,19 @@
   height: 210px;
 }
 
+.home-box{
+  display: flex;
+  flex-direction: column;  /* Stack divs vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  width: 100%;
+  background: linear-gradient(to bottom,$azul-claro ,$branco );
+}
+
 .home-titulo {
     text-align: center;
     justify-content: center;
+    font-family: 'neue-haas', sans-serif;
     width: 100%;
     max-width: 600px;
     padding: 20px 0;
@@ -39,6 +52,9 @@
   text-align: center;
   justify-content: center;
   width: 80%;
+  @include dk-pq {
+    width: 40%; 
+  }
   padding: 10px;
   margin-bottom: 20px;
 }

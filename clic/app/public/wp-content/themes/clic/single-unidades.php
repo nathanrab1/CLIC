@@ -14,7 +14,7 @@ get_header();
 
     <!-- Título------->
     <?php if(get_field('titulo')):?>
-        <h2 class="t-2 t-azul unidade-título"><?php echo get_field('titulo'); ?></h2>
+        <h2 class="unidade-título"><?php echo get_field('titulo'); ?></h2>
     <?php endif;?>
 
     <!-- Parágrafo Curto------------------------------------------->
@@ -25,17 +25,6 @@ get_header();
     <!-- Vídeo Curto --------------------------------------------->
     <div class="video-container">
         <iframe width="500" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <!-- Mapa da unidade------------------------------------>
-    <div class="unidade-mapa">
-        <h2 class="t-3">Mapa da Unidade</h2>
-        <?php 
-        $image = get_field('mapa_da_unidade');
-        if( !empty( $image ) ): ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-        <?php endif; ?>
-
     </div>
 
     <!-- Anos----------------------------------------------------->

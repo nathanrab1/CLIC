@@ -23,7 +23,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'neue-haas';
+    src: url('../fonts/Neue Haas Grotesk Display Pro 65 Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 $helvetica: 'helvetica';
+$neue-haas: 'neue-haas';
 
 
 
