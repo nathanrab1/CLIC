@@ -649,6 +649,7 @@ grid-template-columns: repeat(4, 1fr); /* 4 columns */
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 412px;
   border: 1px solid #ccc; /* Optional styling */
   padding: 10px; /* Optional styling */
   text-align: center; /* Center text */
@@ -672,6 +673,19 @@ grid-template-columns: repeat(4, 1fr); /* 4 columns */
     width: 300px;
     height: 170px;
   }
+}
+.page-unidades-grid-item a {
+  text-align: center;
+  padding: 12px 24px;
+  background-color: #3069b1;
+  width: 145px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .lista-encontros {

@@ -37,7 +37,7 @@ get_header();
 				<p><span>Disciplina:</span> <?php the_field( 'disciplina' ); ?></p>
 				<p><span>Ferramenta principal:</span> <?php the_field( 'ferramenta_principal' ); ?></p>
 				<p><span>Anos:</span> <?php echo get_field('anos'); ?></p>
-				<a href=<?php the_permalink(); ?>>Link para a unidade</a>
+				<div style="padding-top: 8px;"><a href=<?php the_permalink(); ?>>Conheça a unidade</a></div>
 				
 			</div>
 		<?php endwhile;
