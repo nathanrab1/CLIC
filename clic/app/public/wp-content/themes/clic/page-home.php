@@ -21,13 +21,13 @@ get_header();
         <div class="home-titulo">
             <!-- <h1 class="t-1 t-azul"><?php the_title();?></h1> -->
             <!-- <h1><a href="<?php bloginfo('url')?>" class="ir logo-home" >CLIC</a></h1> -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo-home.svg" alt="SVG Image" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo-clic.svg" alt="SVG Image" />
 
         </div>
 
             <!-- Parágrafo Curto------------------------------------------->
         <?php if(get_field('paragrafo_sobre_o_projeto')):?>
-            <h2 class="t-4 t-preto home-paragrafo"><?php echo get_field('paragrafo_sobre_o_projeto'); ?></h2>
+            <h2 class="t-3 t-preto home-paragrafo"><?php echo get_field('paragrafo_sobre_o_projeto'); ?></h2>
         <?php endif;?>
     </div>
 

@@ -36,3 +36,32 @@ Stack trace:
 [24-Oct-2024 02:38:13 UTC] PHP Parse error:  syntax error, unexpected token "endif", expecting end of file in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\single-unidades.php on line 17
 [23-Nov-2024 00:19:18 UTC] PHP Parse error:  syntax error, unexpected identifier "version" in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\header.php on line 51
 [23-Nov-2024 00:19:20 UTC] PHP Parse error:  syntax error, unexpected identifier "version" in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\header.php on line 51
+[14-Feb-2025 18:06:18 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php:40
+Stack trace:
+#0 C:\Users\Nathan\Local Sites\clic\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Nathan\Local Sites\clic\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nathan...')
+#2 C:\Users\Nathan\Local Sites\clic\app\public\index.php(17): require('C:\\Users\\Nathan...')
+#3 {main}
+  thrown in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php on line 40
+[14-Feb-2025 18:06:24 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php:40
+Stack trace:
+#0 C:\Users\Nathan\Local Sites\clic\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Nathan\Local Sites\clic\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nathan...')
+#2 C:\Users\Nathan\Local Sites\clic\app\public\index.php(17): require('C:\\Users\\Nathan...')
+#3 {main}
+  thrown in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php on line 40
+[14-Feb-2025 18:06:39 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php:40
+Stack trace:
+#0 C:\Users\Nathan\Local Sites\clic\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Nathan\Local Sites\clic\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nathan...')
+#2 C:\Users\Nathan\Local Sites\clic\app\public\index.php(17): require('C:\\Users\\Nathan...')
+#3 {main}
+  thrown in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php on line 40
+[14-Feb-2025 18:07:23 UTC] PHP Parse error:  syntax error, unexpected token "endif" in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php on line 40
+[14-Feb-2025 18:13:14 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php:41
+Stack trace:
+#0 C:\Users\Nathan\Local Sites\clic\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Nathan\Local Sites\clic\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Nathan...')
+#2 C:\Users\Nathan\Local Sites\clic\app\public\index.php(17): require('C:\\Users\\Nathan...')
+#3 {main}
+  thrown in C:\Users\Nathan\Local Sites\clic\app\public\wp-content\themes\clic\page-unidades.php on line 41

@@ -38,10 +38,10 @@
 				<li><a href="<?php bloginfo('url')?>">Home</a></li>
 				<li><a href="<?php bloginfo('url')?>/sobre">Sobre o CLIC</a></li>
 				<li class="sub" ><a href="<?php bloginfo('url')?>/unidades">Unidades</a>
-					<ul class="sub-menu">
+					<!-- <ul class="sub-menu">
 						<li><a href="<?php bloginfo('url')?>/unidades/regionalizacao-das-americas/">Unidade 1</a></li>
 						<li><a href="<?php bloginfo('url')?>/unidades/regionalizacao-da-europa/">Unidade 2</a></li>
-					</ul>
+					</ul> -->
 				</li>
 				<li><a href="<?php bloginfo('url')?>/equipe">Equipe</a></li>
 			</ul>

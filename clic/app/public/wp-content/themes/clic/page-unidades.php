@@ -16,40 +16,36 @@
 get_header();
 ?>
 
-<h1 class="t-1 t-verde"><?php the_title();?></h1>
-<h2 class="t-3 t-principal"><?php the_content();?></h2>	
 
-<div class="participants-grid">
-    
-  
-	<div class="grid-container">
-		<?php
-		// WP Query to fetch unidades
-		$args = array(
-			'post_type' => 'unidades', // Your custom post type
-			'posts_per_page' => -1, // Get all unidades
-		);
-		$unidades = new WP_Query($args);
+<h1 class="page-unidades-title t-1 t-azul"><?php the_title();?></h1>
 
-		if ($unidades->have_posts()) :
-			while ($unidades->have_posts()) : $unidades->the_post(); ?>
-				<div class="grid-item">
+<div class="page-unidades-grid-container">
+	<?php
+	// WP Query to fetch unidades
+	$args = array(
+		'post_type' => 'unidades', // Your custom post type
+		'posts_per_page' => -1, // Get all unidades
+	);
+	$unidades = new WP_Query($args);
 
-				<?php 
-					$image = get_field('imagem_destaque');
-					if( !empty( $image ) ): ?>
-						<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-					<?php endif; ?>
-					<h2><?php the_title(); ?></h2>
-					<p><?php the_excerpt(); ?></p>
-					<a href=<?php the_permalink(); ?>>Overview</a>
-				</div>
-			<?php endwhile;
-		else : ?>
-			<p>Nenhum resultado para a sua busca.</p>
-		<?php endif; ?>
-	</div>
+	if ($unidades->have_posts()) :
+		while ($unidades->have_posts()) : $unidades->the_post(); ?>
+			<div class="page-unidades-grid-item">
+				
+				<h2 class="t-3 t-laranja" ><?php the_title(); ?></h2>
+				<iframe   src="https://www.youtube.com/embed/<?php the_field( 'codigo_youtube_video_curto' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+				<p><span>Disciplina:</span> <?php the_field( 'disciplina' ); ?></p>
+				<p><span>Ferramenta principal:</span> <?php the_field( 'ferramenta_principal' ); ?></p>
+				<p><span>Anos:</span> <?php echo get_field('anos'); ?></p>
+				<a href=<?php the_permalink(); ?>>Link para a unidade</a>
+				
+			</div>
+		<?php endwhile;
+	else : ?>
+		<p>Nenhum resultado para a sua busca.</p>
+	<?php endif; ?>
 </div>
+<div style="height: 20px;"></div>
 
 
 

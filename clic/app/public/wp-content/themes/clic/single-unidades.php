@@ -14,7 +14,7 @@ get_header();
 
     <!-- Título------->
     <?php if(get_field('titulo')):?>
-        <h2 class="unidade-título"><?php echo get_field('titulo'); ?></h2>
+        <h2 class="unidade-título t-2 t-roxo"><?php echo get_field('titulo'); ?></h2>
     <?php endif;?>
 
     <!-- Parágrafo Curto------------------------------------------->
@@ -53,7 +53,7 @@ get_header();
         <?php while ( have_rows( 'encontros' ) ) : the_row(); ?>
             <li class="encontro-container">
                 <div class="encontro-title">
-                    <h1>Encontro <?php echo $count; $count++;?></h1>
+                    <h1>Encontro <?php echo $count; $count++;?> <span>(saiba mais)</span></h1>
                 </div>
                 <div class="unidade-encontro-content">
                     
@@ -72,6 +72,7 @@ get_header();
     <?php endif; ?>
 
 </div>
+<div style="height: 20px;"></div>
 <?php
 
 get_footer();

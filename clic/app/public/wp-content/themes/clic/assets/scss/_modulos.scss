@@ -27,7 +27,7 @@
   justify-content: center; /* Center vertically */
   align-items: center;     /* Center horizontally */
   width: 100%;
-  background: linear-gradient(to bottom,$azul-claro ,$branco );
+  background: linear-gradient(to bottom, $azul ,$azul-claro );
 }
 
 .home-titulo {
@@ -39,10 +39,10 @@
     padding: 20px 0;
     img {
       display: block;
-      width: 249px;
+      width: 137px;
       margin: 0 auto;
       @include dk-pq {
-        width: 345px; 
+        width: 243px; 
       }
     }
  
@@ -114,9 +114,6 @@
   width: 70%;
   max-width: 600px;
   padding: 10px;
- 
-
-
 }
 
 .unidade-paragrafo {
@@ -222,35 +219,48 @@ color: $verde;
   justify-content: center;
 }
 
-.unidade-grid-item {
-  border: 1px solid #ccc; /* Optional styling */
-  padding: 10px; /* Optional styling */
-  text-align: center; /* Center text */
-  width: 200px;
-  min-height: 500px;
-  align-items: stretch;
+
+.page-unidades-title{
+     /* Center horizontally */
+  text-align: center; 
+  padding: 30px;
 }
 
-.unidade-grid-item iframe {
-  width: 80%;
-  height: auto;
-}
-
-
-.grid-container {
+.page-unidades-grid-container {
   display: flex;
  flex-flow: column; /* 4 columns */
   gap: 20px; /* Adjust spacing between items */
   @include dk-pq {
-    flex-flow: row;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
 }
 
-.grid-item {
+.page-unidades-grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border: 1px solid #ccc; /* Optional styling */
   padding: 10px; /* Optional styling */
   text-align: center; /* Center text */
+  @include dk-pq {
+    width:314px;
+    h2{
+      min-height: 53px;
+    }
+  }
+  span{
+    font-weight: 600;
+  }
+  iframe{
+    
+    border: #ccc;
+    @include dk-pq{
+      width: 300px;
+      height: 170px;
+    }
+  }
 }
 
 .lista-encontros{
@@ -271,6 +281,10 @@ color: $verde;
   margin-top: 20px;
   background-color: $cinza;
   font-weight: 600;
+  cursor: pointer;
+  span{
+    font-weight: 400;
+  }
 }
 
 .unidade-encontro-content{

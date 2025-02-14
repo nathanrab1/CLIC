@@ -150,11 +150,11 @@ table {
 }
 
 .t-roxo {
-  color: #352e49;
+  color: #5a4a85;
 }
 
 .bg-roxo {
-  background-color: #352e49;
+  background-color: #5a4a85;
 }
 
 .t-rosa {
@@ -397,14 +397,14 @@ iframe {
 }
 
 body {
-  font-family: "neue-haas";
+  font-family: "helvetica";
   background: #F4F4F5;
   min-height: 100vh;
 }
 
 main {
   padding-top: 56px;
-  min-height: calc(100vh - 145px);
+  min-height: calc(100vh - 130px);
   background-color: #fffffd;
 }
 
@@ -454,7 +454,7 @@ strong {
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   width: 100%;
-  background: linear-gradient(to bottom, #6ea4b7, #fffffd);
+  background: linear-gradient(to bottom, #3069b1, #6ea4b7);
 }
 
 .home-titulo {
@@ -467,12 +467,12 @@ strong {
 }
 .home-titulo img {
   display: block;
-  width: 249px;
+  width: 137px;
   margin: 0 auto;
 }
 @media (min-width: 990px) {
   .home-titulo img {
-    width: 345px;
+    width: 243px;
   }
 }
 
@@ -627,35 +627,51 @@ grid-template-columns: repeat(4, 1fr); /* 4 columns */
   justify-content: center;
 }
 
-.unidade-grid-item {
-  border: 1px solid #ccc; /* Optional styling */
-  padding: 10px; /* Optional styling */
-  text-align: center; /* Center text */
-  width: 200px;
-  min-height: 500px;
-  align-items: stretch;
+.page-unidades-title {
+  /* Center horizontally */
+  text-align: center;
+  padding: 30px;
 }
 
-.unidade-grid-item iframe {
-  width: 80%;
-  height: auto;
-}
-
-.grid-container {
+.page-unidades-grid-container {
   display: flex;
   flex-flow: column; /* 4 columns */
   gap: 20px; /* Adjust spacing between items */
 }
 @media (min-width: 990px) {
-  .grid-container {
-    flex-flow: row;
+  .page-unidades-grid-container {
+    flex-flow: row wrap;
+    justify-content: center;
   }
 }
 
-.grid-item {
+.page-unidades-grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border: 1px solid #ccc; /* Optional styling */
   padding: 10px; /* Optional styling */
   text-align: center; /* Center text */
+}
+@media (min-width: 990px) {
+  .page-unidades-grid-item {
+    width: 314px;
+  }
+  .page-unidades-grid-item h2 {
+    min-height: 53px;
+  }
+}
+.page-unidades-grid-item span {
+  font-weight: 600;
+}
+.page-unidades-grid-item iframe {
+  border: #ccc;
+}
+@media (min-width: 990px) {
+  .page-unidades-grid-item iframe {
+    width: 300px;
+    height: 170px;
+  }
 }
 
 .lista-encontros {
@@ -674,6 +690,10 @@ grid-template-columns: repeat(4, 1fr); /* 4 columns */
   margin-top: 20px;
   background-color: #acafb4;
   font-weight: 600;
+  cursor: pointer;
+}
+.encontro-title span {
+  font-weight: 400;
 }
 
 .unidade-encontro-content {
@@ -792,6 +812,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.1019607843) 0 11px 20px;
   background: #fffffd;
 }
 @media (min-width: 990px) {
