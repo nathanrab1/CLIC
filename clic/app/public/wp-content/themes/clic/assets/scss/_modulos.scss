@@ -112,8 +112,11 @@
   width: 100%;
   align-items: center;
   background-color: $amarelo;
-  height: 250px;
+  height: 150px;
   padding-top: 10px;
+  @include dk-pq{
+    height: 250px;
+  }
 }
 
 .unidade-título {
@@ -126,7 +129,7 @@
   }
 }
 
-.video-paragrafo{
+.wrapper-video-paragrafo{
   display: flex;
   flex-direction: column; /* Empilha os elementos no mobile */
   align-items: center;
@@ -136,6 +139,7 @@
     justify-content: space-between; /* Adiciona espaçamento entre eles */
     gap: 70px;
     margin: 70px 70px;
+    margin-bottom: 35px;
     align-items: stretch;
     max-width: 1334px;
   }
@@ -145,9 +149,11 @@
   width: 100%;
   iframe{
     aspect-ratio: 16/9;
+    height: auto;
     @include dk-pq{
       aspect-ratio: 16/8;
       border-radius: 39px;
+      height: 500px;
     }
   }
   @include dk-pq{
@@ -157,9 +163,6 @@
   }
 }
 
-.wrapper-paragrafo-unidades{
-  width: 100%;
-}
 
 .unidade-paragrafo {
   display: flex ;
@@ -181,14 +184,77 @@
   }
 }
 
-.video-container iframe {
-  
-    height: auto;
-    @include dk-pq {
-      height: 500px;
-    }
+.wrapper-unidades-conteudo{
+  display: flex;
+  flex-direction: column; /* Empilha os elementos no mobile */
+  align-items: center;
+  text-align: center;
+  @include dk-pq {
+    flex-direction: row; /* Coloca os elementos lado a lado */
+    justify-content: space-between; /* Adiciona espaçamento entre eles */
+    gap: 70px;
+    margin: 35px 70px;
+    align-items: stretch;
+    max-width: 1334px;
+  }
+}
+
+.compreensoes-titulo {
+  display: flex ;
+  text-align: center;
+  justify-content: center;
+  padding: 40px 40px;
+  background-color: $cinza;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 40px 40px;
+  // margin-bottom: 20px;
+  background-color: $amarelo-claro;
+  border-radius: 20px;;
+  h2{
+    padding: 20px 20px;
+  }
+  @include dk-pq{
+    margin: 0px;
+    font-size: 26px;
+    width: 25%;
+    align-items: center;
+    border-radius: 39px;
+  }
+}
+
+.compreensoes-texto {
+  text-align: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 20px;
+  background-color: $branco;
+  border-radius: 20px;
+  @include dk-pq{
+    font-size: 26px;
+    width: 75%;
+    margin: 0px;
+    align-items: center;
+    border-radius: 39px;
+    padding: 40px;
+  }
+  p {
+    text-align: justify;
+    margin: 30px;
+  }
+  p::before {
+    content: "•"; /* Define o marcador */
+    display: inline-block;
+    margin-right: 8px; /* Pequeno espaço entre o marcador e o texto */
+    color: #333; /* Cor do marcador */
+    font-size: 20px; /* Tamanho do marcador */
+    font-weight: bold;
+}
 
 }
+
 
 .unidade-mapa {
   color: $verde;
@@ -233,27 +299,6 @@ color: $verde;
 .unidade-habilidades p {
   margin-bottom: 0px;
   margin-top: 20px;
-}
-
-.ideias-centrais {
-  align-items: center;
-  width: 60%;
-}
-
-
-
-.ideias-centrais h2 {
-  text-align: center;
-  margin-bottom: 5px;
-
-}
-
-.ideias-centrais span{
-  text-align: justify;
-  margin-bottom: 30px;
-  display: list-item; /* This has to be "list-item"                                          */
-  margin-left : 1em;  /* If you use default list-style-position 'outside', you may need this */
-
 }
 
 
