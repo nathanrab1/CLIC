@@ -847,6 +847,114 @@ strong {
   list-style-position: inside;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Adjust spacing between items */
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  text-align: center; /* Center text */
+}
+
+.people-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 50px;
+  font-size: 40px;
+  color: var(--dark-blue);
+}
+
+.people {
+  /* display: inline-block; */
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  /* width: 800px; */
+}
+
+.sub-titulo {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--dark-blue);
+  margin: 35px 20px;
+  margin-bottom: 15px;
+}
+
+.person-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  padding: 0px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--dark-blue);
+  justify-content: center;
+  align-items: center;
+  /* max-width: 800px; */
+  justify-content: center;
+}
+
+.people-inner {
+  width: 400px;
+  display: inline;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.people::-moz-selection {
+  background: var(--dark-green);
+  color: var(--dark-pink);
+}
+
+.people::selection {
+  background: var(--dark-green);
+  color: var(--dark-pink);
+}
+
+.person-card {
+  justify-content: center;
+  margin: 0px 5px;
+  padding: 20px opx;
+}
+
+.person-image {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 5px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person-name {
+  text-align: center;
+  font-weight: 300;
+  font-size: medium;
+  padding: 0 5px;
+}
+
+.person-role {
+  text-align: center;
+  font-style: italic;
+  font-size: medium;
+  padding: 0 20px;
+}
+
 footer {
   box-flex-group: #fffffd;
   width: 100%; /* Frame 1 */
