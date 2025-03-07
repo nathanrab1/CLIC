@@ -494,10 +494,8 @@ strong {
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center horizontally */
   text-align: center; /* Center text within items */
-  margin: 0 auto; /* Center the container itself */
-  background-color: #fffffd;
+  background-color: #F2F2F2;
   width: 100vw;
-  padding-top: 40px;
 }
 
 .sobre-titulo {
@@ -508,12 +506,18 @@ strong {
   padding: 10px;
 }
 
-.sobre-paragrafo {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
+.wrapper-sobre-texto {
+  margin: 50px;
+  max-width: 70%;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 20px;
+}
+@media (min-width: 990px) {
+  .wrapper-sobre-texto {
+    font-size: 26px;
+    width: 75%;
+  }
 }
 
 .unidade-container {
@@ -523,6 +527,61 @@ strong {
   text-align: center; /* Center text within items */
   background-color: #F2F2F2;
   width: 100vw;
+}
+
+.page-unidades-grid-container {
+  display: flex;
+  flex-flow: column; /* 4 columns */
+  gap: 20px; /* Adjust spacing between items */
+}
+@media (min-width: 990px) {
+  .page-unidades-grid-container {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+.page-unidades-grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 412px;
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  text-align: center; /* Center text */
+}
+@media (min-width: 990px) {
+  .page-unidades-grid-item {
+    width: 314px;
+  }
+  .page-unidades-grid-item h2 {
+    min-height: 53px;
+  }
+}
+.page-unidades-grid-item span {
+  font-weight: 600;
+}
+.page-unidades-grid-item iframe {
+  border: #ccc;
+}
+@media (min-width: 990px) {
+  .page-unidades-grid-item iframe {
+    width: 300px;
+    height: 170px;
+  }
+}
+.page-unidades-grid-item a {
+  text-align: center;
+  padding: 12px 24px;
+  background-color: #3069b1;
+  width: 145px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .unidade-titulo-div {
@@ -629,32 +688,32 @@ strong {
   }
 }
 
-.compreensoes-titulo {
+.unidades-conteudo-titulo {
   display: flex;
   text-align: center;
   justify-content: center;
   padding: 40px 40px;
   background-color: #acafb4;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 26px;
   margin: 40px 40px;
   background-color: #ebcc73;
   border-radius: 20px;
 }
-.compreensoes-titulo h2 {
+.unidades-conteudo-titulo h2 {
   padding: 20px 20px;
 }
 @media (min-width: 990px) {
-  .compreensoes-titulo {
+  .unidades-conteudo-titulo {
     margin: 0px;
-    font-size: 26px;
+    font-size: 36px;
     width: 25%;
     align-items: center;
     border-radius: 39px;
   }
 }
 
-.compreensoes-texto {
+.unidades-conteudo-texto {
   text-align: center;
   justify-content: center;
   padding: 10px 20px;
@@ -665,7 +724,7 @@ strong {
   border-radius: 20px;
 }
 @media (min-width: 990px) {
-  .compreensoes-texto {
+  .unidades-conteudo-texto {
     font-size: 26px;
     width: 75%;
     margin: 0px;
@@ -674,11 +733,11 @@ strong {
     padding: 40px;
   }
 }
-.compreensoes-texto p {
+.unidades-conteudo-texto p {
   text-align: justify;
   margin: 30px;
 }
-.compreensoes-texto p::before {
+.unidades-conteudo-texto p::before {
   content: "•"; /* Define o marcador */
   display: inline-block;
   margin-right: 8px; /* Pequeno espaço entre o marcador e o texto */
@@ -687,140 +746,32 @@ strong {
   font-weight: bold;
 }
 
-.unidade-mapa {
-  color: #50a554;
-  margin-bottom: 20px;
-}
-
-.unidade-mapa img {
-  max-width: 100%; /* Prevents the image from exceeding the width of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.unidade-anos h2 {
-  color: #50a554;
-  margin-bottom: 10px;
-}
-
-.unidade-anos p {
-  color: #2d2d2e;
-  margin-bottom: 10px;
-}
-
-.unidade-habilidades {
-  text-align: justify;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 60%;
-}
-
-.unidade-habilidades h2 {
-  text-align: center;
-  color: #50a554;
-}
-
-.unidade-habilidades p {
-  margin-bottom: 0px;
-  margin-top: 20px;
-}
-
-.unidade-grid-container {
-  display: flex;
-  align-items: center; /* Center horizontally */
-  text-align: center; /* Center text within ite
-grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Adjust spacing between items */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.page-unidades-title {
-  /* Center horizontally */
-  text-align: center;
-  padding: 30px;
-}
-
-.page-unidades-grid-container {
-  display: flex;
-  flex-flow: column; /* 4 columns */
-  gap: 20px; /* Adjust spacing between items */
-}
-@media (min-width: 990px) {
-  .page-unidades-grid-container {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-}
-
-.page-unidades-grid-item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 412px;
-  border: 1px solid #ccc; /* Optional styling */
-  padding: 10px; /* Optional styling */
-  text-align: center; /* Center text */
-}
-@media (min-width: 990px) {
-  .page-unidades-grid-item {
-    width: 314px;
-  }
-  .page-unidades-grid-item h2 {
-    min-height: 53px;
-  }
-}
-.page-unidades-grid-item span {
-  font-weight: 600;
-}
-.page-unidades-grid-item iframe {
-  border: #ccc;
-}
-@media (min-width: 990px) {
-  .page-unidades-grid-item iframe {
-    width: 300px;
-    height: 170px;
-  }
-}
-.page-unidades-grid-item a {
-  text-align: center;
-  padding: 12px 24px;
-  background-color: #3069b1;
-  width: 145px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 12px;
-  font-size: 16px;
-  text-align: center;
-  transition: background-color 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
 .lista-encontros {
   width: 80vw;
 }
-@media (min-width: 990px) {
-  .lista-encontros {
-    max-width: 60vw;
-  }
-}
 
 .encontro-title {
-  border: 1px solid #acafb4;
-  height: 20px;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #2d2d2e;
   margin-top: 20px;
-  background-color: #acafb4;
+  margin-bottom: 3px;
   font-weight: 600;
   cursor: pointer;
 }
 .encontro-title span {
   font-weight: 400;
 }
+@media (min-width: 990px) {
+  .encontro-title {
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
 
 .unidade-encontro-content {
-  border: 1px solid #acafb4;
+  border: 2px solid #2d2d2e;
   display: none;
-  padding: 10px 20px;
   line-height: 1.3;
 }
 

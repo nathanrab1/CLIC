@@ -17,10 +17,16 @@ get_header();
 ?>
 
 <div class="sobre-container">
-
-    <div class="sobre-titulo">
-        <h1 class="t-2 t-azul"><?php the_title();?></h1>
+    
+    <div class="unidade-titulo-div">
+        <h1 class="unidade-título">Sobre o CLIC</h1>
     </div>
+
+    
+    <div class="wrapper-sobre-texto">
+        <p class=""><?php echo get_field('texto_sobre'); ?></p> 
+    </div>
+
 </div>
 
 <?php

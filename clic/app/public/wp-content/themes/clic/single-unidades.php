@@ -33,20 +33,20 @@ get_header();
 
     <!-- Compreensões Centrais----------------------------------->
     <div class="wrapper-unidades-conteudo">
-        <h2 class="compreensoes-titulo">Compreensões Centrais</h2>
-        <h3 class="compreensoes-texto"><?php echo get_field('ideias_centrais'); ?></h3>
+        <h2 class="unidades-conteudo-titulo">Compreensões Centrais</h2>
+        <h3 class="unidades-conteudo-texto"><?php echo get_field('ideias_centrais'); ?></h3>
     </div>
 
     <!-- Habilidades BNCC----------------------------------->
     <div class="wrapper-unidades-conteudo">
-        <h2 class="compreensoes-titulo">Habilidades BNCC</h2>
-        <h3 class="compreensoes-texto"><?php echo get_field('habilidades_bncc'); ?></h3>
+        <h2 class="unidades-conteudo-titulo">Habilidades BNCC</h2>
+        <h3 class="unidades-conteudo-texto"><?php echo get_field('habilidades_bncc'); ?></h3>
     </div> 
 
     <!-- Evidências de Aprendizagem----------------------------------->
     <div class="wrapper-unidades-conteudo">
-        <h2 class="compreensoes-titulo">Evidências de Aprendizagem</h2>
-        <h3 class="compreensoes-texto"><?php echo get_field('evidencias_de_aprendizagem'); ?></h3>
+        <h2 class="unidades-conteudo-titulo">Evidências de Aprendizagem</h2>
+        <h3 class="unidades-conteudo-texto"><?php echo get_field('evidencias_de_aprendizagem'); ?></h3>
     </div>
    
     <!-- Anos----------------------------------------------------->
@@ -70,14 +70,24 @@ get_header();
         <ul class="lista-encontros">
         <?php while ( have_rows( 'encontros' ) ) : the_row(); ?>
             <li class="encontro-container">
+
                 <div class="encontro-title">
-                    <h1>Encontro <?php echo $count; $count++;?> <span>(saiba mais)</span></h1>
+                    <h3>Encontro <?php echo $count; $count++;?></h3>
+                    <h3>Clique para expandir</h3>
                 </div>
+
                 <div class="unidade-encontro-content">
                     
-                    <h2><?php echo get_sub_field( 'titulo' ); ?></h2>  
+                    <h2 class="unidade-titulo-div t-3"><?php echo get_sub_field( 'titulo' ); ?></h2>  
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_sub_field( 'codigo_youtube' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-                    <div class="encontro-objetivo"><?php echo get_sub_field( 'objetivos' ); ?></div>
+                    
+                    
+                    <div class="wrapper-unidades-conteudo">
+                        <h2 class="unidades-conteudo-titulo">Objetivos de Aprendizagem</h2>
+                        <h3 class="unidades-conteudo-texto"><?php echo get_sub_field( 'objetivos' ); ?></h3>
+                    </div>
+                                           
+
                     <div class="encontro-etapa"><?php echo get_sub_field( 'principais_etapas' ); ?></div>
                     <div class="encontro-materiais"><?php echo get_sub_field( 'materiais_e_ferramentas' ); ?></div>
 
@@ -89,6 +99,11 @@ get_header();
 	    <?php // No rows found ?>
     <?php endif; ?>
 
+
+
+
+
+    
 </div>
 <div style="height: 20px;"></div>
 <?php
