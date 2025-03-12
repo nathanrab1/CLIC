@@ -529,6 +529,13 @@ strong {
   width: 100vw;
 }
 
+@media (min-width: 990px) {
+  .participants-grid {
+    max-width: 60%;
+    margin: 30px;
+  }
+}
+
 .page-unidades-grid-container {
   display: flex;
   flex-flow: column; /* 4 columns */
@@ -845,12 +852,6 @@ strong {
 .encontro-materiais ul {
   list-style-type: disc !important;
   list-style-position: inside;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Adjust spacing between items */
 }
 
 .grid-item {

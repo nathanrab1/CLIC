@@ -111,15 +111,21 @@
   width: 100vw;
 }
 
-
+.participants-grid{
+  @include dk-pq{
+    max-width: 60%;
+    margin: 30px;
+  }
+}
 
 .page-unidades-grid-container {
-  display: flex;
+ display: flex;
  flex-flow: column; /* 4 columns */
   gap: 20px; /* Adjust spacing between items */
   @include dk-pq {
     flex-flow: row wrap;
     justify-content: center;
+    
   }
 
 }
@@ -451,11 +457,7 @@
 
 //Page Equipe
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Adjust spacing between items */
-}
+
 .grid-item {
   border: 1px solid #ccc; /* Optional styling */
   padding: 10px; /* Optional styling */
