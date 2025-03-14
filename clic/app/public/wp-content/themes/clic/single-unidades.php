@@ -10,57 +10,56 @@
 get_header();
 ?>
 
-<div class="unidade-container">
 
-    <!-- Título------->
-    <div class="unidade-titulo-div">
-        <?php if(get_field('titulo')):?>
-            <h2 class="unidade-título"><?php echo get_field('titulo'); ?></h2>
-        <?php endif;?>
-    </div>
+    <section class="fx fx-row destaque">
+        <!-- Vídeo Geral --------------------------------------------->
+        <iframe class="col-d-50" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="wrapper col-d-50">
+            <!-- Título------->
+            <?php if(get_field('titulo')):?>
+                <h1 class="t-1"><?php echo get_field('titulo'); ?></h1>
+            <?php endif;?>
+        
+            <!-- Parágrafo Curto------------------------------------------->
+            <?php if(get_field('paragrafo_curto')):?>
+                <p class="t-5"><?php echo get_field('paragrafo_curto'); ?></p>
+            <?php endif;?>
 
+            <!-- Disciplina----------------------------------------------------->
+            <p class="t-6"><?php echo get_field('disciplina'); ?></p>
 
-    <div class="wrapper-video-paragrafo">
-        <!-- Vídeo Curto --------------------------------------------->
-        <div class="video-container">
-            <iframe width="500" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- Anos----------------------------------------------------->
+            <p class="t-6"><?php echo get_field('anos'); ?></p>
+        
+            <!-- Duração----------------------------------------------------->
+            <p class="t-6"><?php echo get_field('duracao'); ?></p>
         </div>
-        <!-- Parágrafo Curto------------------------------------------->
-        <?php if(get_field('paragrafo_curto')):?>
-            <h2 class="unidade-paragrafo"><?php echo get_field('paragrafo_curto'); ?></h2>
-        <?php endif;?>
-    </div>
+    </section>
+
+
+
+
 
     <!-- Compreensões Centrais----------------------------------->
-    <div class="wrapper-unidades-conteudo">
-        <h2 class="unidades-conteudo-titulo">Compreensões Centrais</h2>
-        <h3 class="unidades-conteudo-texto"><?php echo get_field('ideias_centrais'); ?></h3>
+    <div class="">
+        <h1 class="t-3">Compreensões Centrais</h1>
+        <section class="t-4"><?php echo get_field('ideias_centrais'); ?></section>
     </div>
 
     <!-- Habilidades BNCC----------------------------------->
-    <div class="wrapper-unidades-conteudo">
-        <h2 class="unidades-conteudo-titulo">Habilidades BNCC</h2>
-        <h3 class="unidades-conteudo-texto"><?php echo get_field('habilidades_bncc'); ?></h3>
+    <div class="">
+        <h1 class="t-3">Habilidades BNCC</h1>
+        <section class="t-4"><?php echo get_field('habilidades_bncc'); ?></section>
     </div> 
 
     <!-- Evidências de Aprendizagem----------------------------------->
-    <div class="wrapper-unidades-conteudo">
-        <h2 class="unidades-conteudo-titulo">Evidências de Aprendizagem</h2>
-        <h3 class="unidades-conteudo-texto"><?php echo get_field('evidencias_de_aprendizagem'); ?></h3>
+    <div class="">
+        <h1 class="t-3">Evidências de Aprendizagem</h1>
+        <section class="t-4"><?php echo get_field('evidencias_de_aprendizagem'); ?></section>
     </div>
    
-    <!-- Anos----------------------------------------------------->
-    <div class="unidade-anos">
-        <h2 class="t-3">Ano Escolar Sugerido</h2>
-        <p class="t-3"><?php echo get_field('anos'); ?></p>
-    </div>   
-
-    <!-- Duração----------------------------------------------------->
-    <div class="">
-        <h2 class="t-3">Duração</h2>
-        <p class="t-3"><?php echo get_field('duracao'); ?></p>
-    </div>  
-
+  
   
 
     <!-- Encontros ------------------------------->
@@ -104,7 +103,7 @@ get_header();
 
 
     
-</div>
+
 <div style="height: 20px;"></div>
 <?php
 

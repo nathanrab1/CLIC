@@ -173,179 +173,19 @@
 
 //Single unidade
 
-.unidade-titulo-div {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-  background-color: $amarelo;
-  height: 150px;
-  padding-top: 10px;
+.destaque{
   @include dk-pq{
-    height: 250px;
+  width:82%;
+  margin: 0 auto;
+  max-width: 1900px;
   }
-}
-
-.unidade-título {
-  width: 70%;
-  max-width: 600px;
-  font-weight: 400;
-  font-size: 26px;
-  @include dk-pq{
-    font-size: 45px;
-  }
-}
-
-.wrapper-video-paragrafo{
-  display: flex;
-  flex-direction: column; /* Empilha os elementos no mobile */
-  align-items: center;
-  text-align: center;
-  @include dk-pq {
-    flex-direction: row; /* Coloca os elementos lado a lado */
-    justify-content: space-between; /* Adiciona espaçamento entre eles */
-    gap: 70px;
-    margin: 70px 70px;
-    margin-bottom: 35px;
-    align-items: stretch;
-    max-width: 1334px;
-  }
-}
-
-.video-container {
-  width: 100%;
-  iframe{
-    aspect-ratio: 16/9;
-    height: auto;
+  .wrapper{
     @include dk-pq{
-      aspect-ratio: 16/8;
-      border-radius: 39px;
-      height: 500px;
-    }
-  }
-  @include dk-pq{
-    width:75%;
-    border-radius: 39px;
-    
+      margin: initial;
+      max-width: initial;
+    }  
   }
 }
-
-
-.unidade-paragrafo {
-  display: flex ;
-  text-align: center;
-  justify-content: center;
-  padding: 40px 40px;
-  background-color: $cinza;
-  font-weight: 400;
-  font-size: 20px;
-  h2{
-    padding: 20px 20px;
-  }
-
-  @include dk-pq{
-    font-size: 26px;
-    width: 25%;
-    align-items: center;
-    border-radius: 39px;
-  }
-}
-
-.wrapper-unidades-conteudo{
-  display: flex;
-  flex-direction: column; /* Empilha os elementos no mobile */
-  align-items: center;
-  text-align: center;
-  @include dk-pq {
-    flex-direction: row; /* Coloca os elementos lado a lado */
-    justify-content: space-between; /* Adiciona espaçamento entre eles */
-    gap: 70px;
-    margin: 35px 70px;
-    align-items: stretch;
-    max-width: 1334px;
-  }
-}
-
-.unidades-conteudo-titulo {
-  display: flex ;
-  text-align: center;
-  justify-content: center;
-  padding: 40px 40px;
-  background-color: $cinza;
-  font-weight: 400;
-  font-size: 26px;
-  margin: 40px 40px;
-  // margin-bottom: 20px;
-  background-color: $amarelo-claro;
-  border-radius: 20px;;
-  h2{
-    padding: 20px 20px;
-  }
-  @include dk-pq{
-    margin: 0px;
-    font-size: 36px;
-    width: 25%;
-    align-items: center;
-    border-radius: 39px;
-  }
-}
-
-.unidades-conteudo-texto {
-  text-align: center;
-  justify-content: center;
-  padding: 10px 20px;
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0 20px;
-  background-color: $branco;
-  border-radius: 20px;
-  @include dk-pq{
-    font-size: 26px;
-    width: 75%;
-    margin: 0px;
-    align-items: center;
-    border-radius: 39px;
-    padding: 40px;
-  }
-  p {
-    text-align: justify;
-    margin: 30px;
-  }
-  p::before {
-    content: "•"; /* Define o marcador */
-    display: inline-block;
-    margin-right: 8px; /* Pequeno espaço entre o marcador e o texto */
-    color: #333; /* Cor do marcador */
-    font-size: 20px; /* Tamanho do marcador */
-    font-weight: bold;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// .unidade-grid-container {
-//   display: flex;
-//   align-items: center;    /* Center horizontally */
-//   text-align: center;     /* Center text within ite
-//   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-//   gap: 20px; /* Adjust spacing between items */
-//   flex-wrap: wrap;
-//   justify-content: center;
-// }
-
-
-
-
 
 
 .lista-encontros{
@@ -354,24 +194,6 @@
 
 .encontro-container {
   
-}
-
-.encontro-title{
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid $preto;
-  margin-top: 20px;
-  margin-bottom: 3px;
-  // background-color: $cinza;
-  font-weight: 600;
-  cursor: pointer;
-  span{
-    font-weight: 400;
-  }
-  @include dk-pq{
-    font-size: 25px;
-    font-weight: 400;
-  }
 }
 
 .unidade-encontro-content{

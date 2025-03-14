@@ -50,108 +50,50 @@ $neue-haas: 'neue-haas';
 
 //padroes classes
 .t-1{
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 120%;
+    font-weight: 600;
+    font-size: 26px;
     @include dk-pq{
-        font-size: 45px;
+        font-size: 38px;
+        line-height: 43px;    
     }
 }
 .t-2{
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 120%;
+    font-weight: 600;
+    font-size: 24px;
     @include dk-pq{
-        font-size: 35px;
+        font-size: 32px;
     }
 }
 .t-3{
     font-weight: 600;
     font-size: 20px;
-    line-height: 120%;
-    leading-trim: both;
-    text-edge: cap;
     @include dk-pq{
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 .t-4{
     font-weight: 400;
-    font-size: 18px;
-    line-height: 120%;
-    leading-trim: both;
-    text-edge: cap;
+    font-size: 16px;
     @include dk-pq{
         font-size: 20px;
     }
 }
 .t-5{
     font-weight: 400;
-    font-size: 12px;
-    line-height: 40%;
-    leading-trim: both;
-    text-edge: cap;
+    font-size: 16px;
     @include dk-pq{
-        font-size: 20px;
+        font-size: 17px;
     }
 }
-
-
-.t-texto{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 125%;
-    leading-trim: both;
-    text-edge: cap;
-    @include dk-pq{
-        font-size: 18px;
-    }
-}
-.t-small{
+.t-6{
     font-weight: 400;
     font-size: 11px;
-    line-height: 125%;
-    @include dk-pq{
-        font-size: 13px;
-    }
-}
-.t-menu-1{
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-}
-.t-menu-2{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    leading-trim: both;
-    text-edge: cap;
-    text-transform: uppercase;
-}
-.t-menu-3{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-}
-.t-botao{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
     @include dk-pq{
         font-size: 14px;
-        line-height: 17px;
     }
 }
-.t-tag{
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 120%;
-    leading-trim: both;
-    text-edge: cap;
-    @include dk-pq{
-        font-size: 28px;
-    }
-}
+
+
 
 //font weight
 .t-regular{
@@ -164,10 +106,3 @@ $neue-haas: 'neue-haas';
     font-weight: 900;
 }
 
-.t-wysiwyg{
-    a{
-        color: $preto;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-}
