@@ -1,3 +1,39 @@
-<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 7.23952C0 10.8294 2.98892 13 5.94286 13C8.89679 13 13 10.8294 13 7.23952C13 3.64967 8.89679 0 5.94286 0C4.41623 0 1.97737 0.115601 1.00286 1.36228C0.0917387 2.52785 0 5.50494 0 7.23952Z" fill="#D75930"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20"
+   height="13"
+   viewBox="0 0 20 13"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="i-vermelho.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="67"
+     inkscape:cx="5.2686567"
+     inkscape:cy="6.5074627"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 0,7.23952 C 0,10.8294 2.98892,13 5.94286,13 8.89679,13 13,10.8294 13,7.23952 13,3.64967 8.89679,0 5.94286,0 4.41623,0 1.97737,0.115601 1.00286,1.36228 0.0917387,2.52785 0,5.50494 0,7.23952 Z"
+     fill="#d75930"
+     id="path2" />
 </svg>

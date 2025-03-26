@@ -315,31 +315,19 @@ table {
 .t-wys ul {
   display: flex;
   flex-flow: column;
-  gap: 16px;
+  padding-left: 28px;
 }
 .t-wys ul li {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 14px;
+  padding: 10px 0;
 }
-.t-wys ul li:nth-child(3n-2):before {
-  background: url(../imgs/i-vermelho.svg) no-repeat;
-  background-size: 100%;
+.t-wys ul li:nth-child(3n-2) {
+  list-style-image: url(../imgs/i-vermelho.svg);
 }
-.t-wys ul li:nth-child(3n-1):before {
-  background: url(../imgs/i-verde.svg) no-repeat;
-  background-size: 100%;
+.t-wys ul li:nth-child(3n-1) {
+  list-style-image: url(../imgs/i-verde.svg);
 }
-.t-wys ul li:nth-child(3n):before {
-  background: url(../imgs/i-azul.svg) no-repeat;
-  background-size: 100%;
-}
-.t-wys ul li:before {
-  content: "";
-  display: block;
-  width: 13px;
-  height: 13px;
-  transform: translateY(3px);
+.t-wys ul li:nth-child(3n) {
+  list-style-image: url(../imgs/i-azul.svg);
 }
 .t-wys ul li span {
   width: calc(100% - 27px);
@@ -411,6 +399,18 @@ strong {
   .wrapper-m {
     width: 100%;
     margin: 0;
+  }
+}
+
+.wrapper-sanfona {
+  width: 90%;
+  text-align: left;
+  max-width: 55900px;
+}
+@media (min-width: 990px) {
+  .wrapper-sanfona {
+    width: 90%;
+    max-width: 1900px;
   }
 }
 
@@ -498,6 +498,22 @@ strong {
   }
 }
 
+.col-40 {
+  width: 40%;
+}
+
+@media (min-width: 990px) {
+  .col-d-40 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 990px) {
+  .col-d-45 {
+    width: 45%;
+  }
+}
+
 .col-30 {
   width: 30%;
 }
@@ -557,6 +573,10 @@ strong {
   padding: 25px 0;
 }
 
+.p-15 {
+  padding: 15px 0;
+}
+
 .pb-25 {
   padding-bottom: 25px;
 }
@@ -565,8 +585,18 @@ strong {
   padding: 35px 0;
 }
 
+@media (min-width: 990px) {
+  .p-d-15 {
+    padding: 15px 0;
+  }
+}
+
 .pb-35 {
   padding-bottom: 35px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
 }
 
 .pt-25 {
@@ -576,6 +606,12 @@ strong {
 @media (min-width: 990px) {
   .pt-d-25 {
     padding-top: 25px;
+  }
+}
+
+@media (min-width: 990px) {
+  .pt-d-15 {
+    padding-top: 15px;
   }
 }
 
@@ -798,7 +834,7 @@ strong {
 }
 @media (min-width: 990px) {
   .unidade-encontro-content iframe {
-    max-width: 534px;
+    max-width: 441px;
     aspect-ratio: 16/9;
   }
 }

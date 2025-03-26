@@ -215,9 +215,10 @@
   width: 100%;
   height: auto;
   @include dk-pq {
-    max-width: 534px;
+    max-width: 441px;
     aspect-ratio: 16 / 9;
   }
+
 }
 
 .encontro-objetivo {

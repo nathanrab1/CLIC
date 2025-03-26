@@ -118,35 +118,17 @@ $neue-haas: 'neue-haas';
     ul{
         display: flex;
         flex-flow: column;
-        gap: 16px;
+        padding-left: 28px;
         li{
-            display: flex;
-            flex-flow: row wrap;
-            gap: 14px;
+            padding: 10px 0;
             &:nth-child(3n-2){
-                &:before{
-                    background: url(../imgs/i-vermelho.svg) no-repeat;
-                    background-size: 100%;
-                }    
+                list-style-image: url(../imgs/i-vermelho.svg); 
             }
             &:nth-child(3n-1){
-                &:before{
-                    background: url(../imgs/i-verde.svg) no-repeat;
-                    background-size: 100%;
-                }    
+                list-style-image: url(../imgs/i-verde.svg);  
             }
             &:nth-child(3n){
-                &:before{
-                    background: url(../imgs/i-azul.svg) no-repeat;
-                    background-size: 100%;
-                }    
-            }
-            &:before{
-                content:"";
-                display: block;
-                width: 13px;
-                height: 13px;
-                transform: translateY(3px);
+                list-style-image: url(../imgs/i-azul.svg);  
             }
             span{
                 width: calc(100% - 27px);
