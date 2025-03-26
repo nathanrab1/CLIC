@@ -175,7 +175,7 @@
 
 .destaque{
   @include dk-pq{
-  width:82%;
+  width:55%;
   margin: 0 auto;
   max-width: 1900px;
   }
@@ -189,16 +189,17 @@
   iframe{
     height: 56vw;
     @include dk-pq{
-      height: 20vw;
+      height: 14vw;
       order: 2;
     }
   }
 }
 
-
-.lista-encontros{
-  width: 80vw;
+.encontro-title:hover{ 
+  cursor:pointer;
 }
+
+
 
 .encontro-container {
   
@@ -209,10 +210,6 @@
   line-height: 1.3;
 }
 
-.unidade-encontro-content h2 {
-  padding-bottom: 10px;
-  font-size: 20px;
-}
 
 .unidade-encontro-content iframe{
   width: 100%;

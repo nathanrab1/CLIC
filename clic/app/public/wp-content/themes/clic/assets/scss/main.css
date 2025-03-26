@@ -268,7 +268,7 @@ table {
 }
 @media (min-width: 990px) {
   .t-4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -278,7 +278,7 @@ table {
 }
 @media (min-width: 990px) {
   .t-5 {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
@@ -384,11 +384,44 @@ strong {
 .wrapper {
   width: 82%;
   margin: 0 auto;
+  max-width: 55900px;
+}
+@media (min-width: 990px) {
+  .wrapper {
+    width: 55%;
+    margin: 0 auto;
+    max-width: 1900px;
+  }
+}
+
+@media (min-width: 990px) {
+  .wrapper-d {
+    width: 55%;
+    margin: 0 auto;
+    max-width: 1900px;
+  }
+}
+
+.wrapper-m {
+  width: 82%;
+  margin: 0 auto;
   max-width: 1900px;
+}
+@media (min-width: 990px) {
+  .wrapper-m {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .fx {
   display: flex;
+}
+
+@media (min-width: 990px) {
+  .fx-d {
+    display: flex;
+  }
 }
 
 .fx-row {
@@ -465,6 +498,16 @@ strong {
   }
 }
 
+.col-30 {
+  width: 30%;
+}
+
+@media (min-width: 990px) {
+  .col-d-30 {
+    width: 30%;
+  }
+}
+
 .col-33 {
   width: 33.333%;
 }
@@ -472,6 +515,16 @@ strong {
 @media (min-width: 990px) {
   .col-d-33 {
     width: 33.333%;
+  }
+}
+
+.col-25 {
+  width: 25%;
+}
+
+@media (min-width: 990px) {
+  .col-d-25 {
+    width: 25%;
   }
 }
 
@@ -506,6 +559,24 @@ strong {
 
 .pb-25 {
   padding-bottom: 25px;
+}
+
+.p-35 {
+  padding: 35px 0;
+}
+
+.pb-35 {
+  padding-bottom: 35px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+@media (min-width: 990px) {
+  .pt-d-25 {
+    padding-top: 25px;
+  }
 }
 
 .bb-preto {
@@ -690,7 +761,7 @@ strong {
 
 @media (min-width: 990px) {
   .destaque {
-    width: 82%;
+    width: 55%;
     margin: 0 auto;
     max-width: 1900px;
   }
@@ -707,23 +778,18 @@ strong {
 }
 @media (min-width: 990px) {
   .destaque iframe {
-    height: 20vw;
+    height: 14vw;
     order: 2;
   }
 }
 
-.lista-encontros {
-  width: 80vw;
+.encontro-title:hover {
+  cursor: pointer;
 }
 
 .unidade-encontro-content {
   display: none;
   line-height: 1.3;
-}
-
-.unidade-encontro-content h2 {
-  padding-bottom: 10px;
-  font-size: 20px;
 }
 
 .unidade-encontro-content iframe {
