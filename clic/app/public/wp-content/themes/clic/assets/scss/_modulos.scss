@@ -183,10 +183,15 @@
     @include dk-pq{
       margin: initial;
       max-width: initial;
+      order: 1;
     }  
   }
   iframe{
     height: 56vw;
+    @include dk-pq{
+      height: 20vw;
+      order: 2;
+    }
   }
 }
 

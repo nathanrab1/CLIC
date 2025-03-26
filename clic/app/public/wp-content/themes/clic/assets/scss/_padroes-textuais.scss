@@ -33,7 +33,49 @@
 $helvetica: 'helvetica';
 $neue-haas: 'neue-haas';
 
-
+//MIXINS FONTES
+@mixin t-1{
+    font-weight: 600;
+    font-size: 26px;
+    @include dk-pq{
+        font-size: 38px;
+        line-height: 43px;    
+    }
+}
+@mixin t-2{
+    font-weight: 600;
+    font-size: 24px;
+    @include dk-pq{
+        font-size: 32px;
+    }
+}
+@mixin t-3{
+    font-size: 20px;
+    @include dk-pq{
+        font-size: 24px;
+    }
+}
+@mixin t-4{
+    font-weight: 400;
+    font-size: 16px;
+    @include dk-pq{
+        font-size: 20px;
+    }
+}
+@mixin t-5{
+    font-weight: 400;
+    font-size: 16px;
+    @include dk-pq{
+        font-size: 17px;
+    }
+}
+@mixin t-6{
+    font-weight: 400;
+    font-size: 12px;
+    @include dk-pq{
+        font-size: 14px;
+    }
+}
 
 //font case
 .t-upper{
@@ -49,49 +91,12 @@ $neue-haas: 'neue-haas';
 }
 
 //padroes classes
-.t-1{
-    font-weight: 600;
-    font-size: 26px;
-    @include dk-pq{
-        font-size: 38px;
-        line-height: 43px;    
-    }
-}
-.t-2{
-    font-weight: 600;
-    font-size: 24px;
-    @include dk-pq{
-        font-size: 32px;
-    }
-}
-.t-3{
-    font-weight: 600;
-    font-size: 20px;
-    @include dk-pq{
-        font-size: 24px;
-    }
-}
-.t-4{
-    font-weight: 400;
-    font-size: 16px;
-    @include dk-pq{
-        font-size: 20px;
-    }
-}
-.t-5{
-    font-weight: 400;
-    font-size: 16px;
-    @include dk-pq{
-        font-size: 17px;
-    }
-}
-.t-6{
-    font-weight: 400;
-    font-size: 12px;
-    @include dk-pq{
-        font-size: 14px;
-    }
-}
+.t-1{@include t-1;}
+.t-2{@include t-2;}
+.t-3{@include t-3;}
+.t-4{@include t-4;}
+.t-5{@include t-5;}
+.t-6{@include t-6;}
 
 
 
@@ -104,5 +109,53 @@ $neue-haas: 'neue-haas';
 }
 .t-black{
     font-weight: 900;
+}
+
+.t-wys{
+    h3{
+        @include t-3;
+    }
+    ul{
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+        li{
+            display: flex;
+            flex-flow: row wrap;
+            gap: 14px;
+            &:nth-child(3n-2){
+                &:before{
+                    background: url(../imgs/i-vermelho.svg) no-repeat;
+                    background-size: 100%;
+                }    
+            }
+            &:nth-child(3n-1){
+                &:before{
+                    background: url(../imgs/i-verde.svg) no-repeat;
+                    background-size: 100%;
+                }    
+            }
+            &:nth-child(3n){
+                &:before{
+                    background: url(../imgs/i-azul.svg) no-repeat;
+                    background-size: 100%;
+                }    
+            }
+            &:before{
+                content:"";
+                display: block;
+                width: 13px;
+                height: 13px;
+                transform: translateY(3px);
+            }
+            span{
+                width: calc(100% - 27px);
+            }
+        }
+    }
+    a{
+        color:$preto;
+        text-decoration: underline;
+    }
 }
 

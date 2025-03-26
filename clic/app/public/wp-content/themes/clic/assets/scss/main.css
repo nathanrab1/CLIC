@@ -254,7 +254,6 @@ table {
 }
 
 .t-3 {
-  font-weight: 600;
   font-size: 20px;
 }
 @media (min-width: 990px) {
@@ -303,6 +302,51 @@ table {
 
 .t-black {
   font-weight: 900;
+}
+
+.t-wys h3 {
+  font-size: 20px;
+}
+@media (min-width: 990px) {
+  .t-wys h3 {
+    font-size: 24px;
+  }
+}
+.t-wys ul {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+.t-wys ul li {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 14px;
+}
+.t-wys ul li:nth-child(3n-2):before {
+  background: url(../imgs/i-vermelho.svg) no-repeat;
+  background-size: 100%;
+}
+.t-wys ul li:nth-child(3n-1):before {
+  background: url(../imgs/i-verde.svg) no-repeat;
+  background-size: 100%;
+}
+.t-wys ul li:nth-child(3n):before {
+  background: url(../imgs/i-azul.svg) no-repeat;
+  background-size: 100%;
+}
+.t-wys ul li:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  transform: translateY(3px);
+}
+.t-wys ul li span {
+  width: calc(100% - 27px);
+}
+.t-wys a {
+  color: #2d2d2e;
+  text-decoration: underline;
 }
 
 .ir {
@@ -355,16 +399,48 @@ strong {
   flex-flow: column;
 }
 
+@media (min-width: 990px) {
+  .fx-d-row {
+    flex-flow: row wrap;
+  }
+}
+
+@media (min-width: 990px) {
+  .fx-d-col {
+    flex-flow: column;
+  }
+}
+
 .fx-jcsb {
   justify-content: space-between;
+}
+
+@media (min-width: 990px) {
+  .fx-d-jcsb {
+    justify-content: space-between;
+  }
+}
+
+.fx-jcc {
+  justify-content: center;
 }
 
 .fx-aic {
   align-items: center;
 }
 
+@media (min-width: 990px) {
+  .fx-d-aic {
+    align-items: center;
+  }
+}
+
 .g-10 {
   gap: 10px;
+}
+
+.g-15 {
+  gap: 15px;
 }
 
 .g-20 {
@@ -399,6 +475,12 @@ strong {
   }
 }
 
+@media (min-width: 990px) {
+  .col-d-45 {
+    width: 45%;
+  }
+}
+
 .col-66 {
   width: 66.666%;
 }
@@ -416,39 +498,6 @@ strong {
   align-items: center;
   padding: 6px;
   border-radius: 12px;
-}
-
-.t-wys ul {
-  display: flex;
-  flex-flow: column;
-  gap: 16px;
-}
-.t-wys ul li {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.t-wys ul li:nth-child(3n-2):before {
-  background: url(../imgs/i-vermelho.svg) no-repeat;
-  background-size: 100%;
-}
-.t-wys ul li:nth-child(3n-1):before {
-  background: url(../imgs/i-verde.svg) no-repeat;
-  background-size: 100%;
-}
-.t-wys ul li:nth-child(3n):before {
-  background: url(../imgs/i-azul.svg) no-repeat;
-  background-size: 100%;
-}
-.t-wys ul li:before {
-  content: "";
-  display: block;
-  width: 13px;
-  height: 13px;
-  transform: translateY(3px);
-}
-.t-wys ul li span {
-  width: calc(100% - 27px);
 }
 
 .p-25 {
@@ -650,10 +699,17 @@ strong {
   .destaque .wrapper {
     margin: initial;
     max-width: initial;
+    order: 1;
   }
 }
 .destaque iframe {
   height: 56vw;
+}
+@media (min-width: 990px) {
+  .destaque iframe {
+    height: 20vw;
+    order: 2;
+  }
 }
 
 .lista-encontros {

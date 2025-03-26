@@ -13,7 +13,7 @@
 
 </main>
 
-<footer class="bg-branco">
+<footer class="bg-branco fx fx-row fx-jcc">
 <?php if ( have_rows( 'footer__logos', 'option' ) ) : ?>
 	<ul>
         <?php while ( have_rows( 'footer__logos', 'option' ) ) : the_row(); ?>

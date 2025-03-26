@@ -47,54 +47,85 @@ strong{
     flex-flow: column;
 }
 
+.fx-d-row {
+    @include dk-pq{
+        flex-flow: row wrap;
+    } 
+}
+
+.fx-d-col{
+    @include dk-pq{
+        flex-flow: column;
+    }
+}
+
 .fx-jcsb{
     justify-content: space-between;
+}
+
+.fx-d-jcsb{
+    @include dk-pq{
+        justify-content: space-between;
+    }
+}
+
+.fx-jcc{
+    justify-content: center;
 }
 
 .fx-aic{
     align-items: center;
 }
 
+.fx-d-aic{
+    @include dk-pq{
+        align-items: center;
+    }
+}
+
+//gaps
 .g-10{
     gap: 10px;                                                                                                          
 }
-
+.g-15{
+    gap: 15px;                                                                                                          
+}
 .g-20{
     gap: 20px;                                                                                                          
 }
-
 .g-25{
     gap: 25px;                                                                                                          
 }
-
 .g-30{
     gap: 30px;                                                                                                          
 }
 
+
+//colunas
 .col-50 {
     width: 50%;
 }
-
 .col-d-50 {
     @include dk-pq{
         width: 50%;
     }
 }
-
 .col-33 {
     width: 33.333%;
 }
-
 .col-d-33 {
     @include dk-pq{
         width: 33.333%;
     }
 }
-
+.col-d-45 {
+    @include dk-pq{
+        width: 45%;
+    }
+}
 .col-66 {
     width: 66.666%;
 }
-
 .col-d-66 {
     @include dk-pq{
         width: 66.666%;
@@ -102,7 +133,7 @@ strong{
 }
 
 
-
+//tags e botoes
 .tag{
     display: flex;
     flex-direction: row;
@@ -112,60 +143,20 @@ strong{
     border-radius: 12px;
 }
 
-.t-wys{
-    ul{
-        display: flex;
-        flex-flow: column;
-        gap: 16px;
-        li{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            &:nth-child(3n-2){
-                &:before{
-                    background: url(../imgs/i-vermelho.svg) no-repeat;
-                    background-size: 100%;
-                }    
-            }
-            &:nth-child(3n-1){
-                &:before{
-                    background: url(../imgs/i-verde.svg) no-repeat;
-                    background-size: 100%;
-                }    
-            }
-            &:nth-child(3n){
-                &:before{
-                    background: url(../imgs/i-azul.svg) no-repeat;
-                    background-size: 100%;
-                }    
-            }
-            &:before{
-                content:"";
-                display: block;
-                width: 13px;
-                height: 13px;
-                transform: translateY(3px);
-            }
-            span{
-                width: calc(100% - 27px);
-            }
-        }
-    }
-}
-
-
+//paddings
 .p-25{
     padding: 25px 0;
 }
-
 .pb-25{
     padding-bottom: 25px;
 }
 
+//borders
 .bb-preto{
   border-bottom: 1px solid $preto;  
 }
 
+//elementos graficos
 .i-seta-dir{
     &:after{
         content: "";

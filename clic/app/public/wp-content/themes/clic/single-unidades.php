@@ -11,11 +11,11 @@ get_header();
 ?>
 
 
-    <section class="fx fx-col destaque g-30 pb-25">
+    <section class="fx fx-col fx-d-row destaque g-30 pb-25 fx-d-jcsb fx-d-aic">
         <!-- Vídeo Geral --------------------------------------------->
-        <iframe class="" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="col-d-45" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_curto'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
-        <div class="wrapper fx fx-col g-30">
+        <div class="wrapper fx fx-col col-d-45 g-30">
             <!-- Título------->
             <?php if(get_field('titulo')):?>
                 <h1 class="t-1"><?php echo get_field('titulo'); ?></h1>
@@ -43,19 +43,19 @@ get_header();
 
     <section class="fx fx-col g-25 p-25 wrapper">
     <!-- Compreensões Centrais----------------------------------->
-            <h1 class="t-3">Compreensões Centrais</h1>
+            <h1 class="t-3 t-bold">Compreensões Centrais</h1>
             <div class="t-4 t-wys"><?php echo get_field('ideias_centrais'); ?></div>
     </section>
     
     <section class="fx fx-col g-25 p-25 wrapper">
     <!-- Habilidades BNCC----------------------------------->
-        <h1 class="t-3">Habilidades BNCC</h1>
+        <h1 class="t-3 t-bold">Habilidades BNCC</h1>
         <div class="t-4 t-wys"><?php echo get_field('habilidades_bncc'); ?></div>
     </section>
 
     <section class="fx fx-col g-25 p-25 wrapper">
     <!-- Evidências de Aprendizagem----------------------------------->
-        <h1 class="t-3">Evidências de Aprendizagem</h1>
+        <h1 class="t-3 t-bold">Evidências de Aprendizagem</h1>
         <div class="t-4 t-wys"><?php echo get_field('evidencias_de_aprendizagem'); ?></div>   
     </section>
   
@@ -82,18 +82,20 @@ get_header();
                         
                         <h2 class=" t-3"><?php echo get_sub_field( 'titulo' ); ?></h2>  
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo get_sub_field( 'codigo_youtube' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-            
+                        
                         <section class="fx fx-col g-10 p-25">
                             <h2 class="t-3">Objetivos de Aprendizagem</h2>
                             <div class="t-4 t-wys"><?php echo get_sub_field( 'objetivos' ); ?></div>
                         </section>
                         
-                        <div class=""><?php echo get_sub_field( 'materiais_e_ferramentas' ); ?></div>
-
+                        <section class="fx fx-col g-10 p-25">
+                            <h2 class="t-3">Materiais e Ferramentas</h2>
+                            <div class="t-4 t-wys"><?php echo get_sub_field( 'materiais_e_ferramentas' ); ?></div>
+                        </section>
 
                         <section class="fx fx-col g-10 p-25">
-                            <h2 class="t-3">Principais Etapas</h2>
-                            <div class=""><?php echo get_sub_field( 'principais_etapas' ); ?></div>
+                            <h2 class="t-3 t-bold">Principais Etapas</h2>
+                            <div class="t-wys fx fx-col g-20"><?php echo get_sub_field( 'principais_etapas' ); ?></div>
                         </section>
 
                     </div>
