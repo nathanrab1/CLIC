@@ -185,6 +185,9 @@
       max-width: initial;
     }  
   }
+  iframe{
+    height: 56vw;
+  }
 }
 
 
@@ -197,7 +200,6 @@
 }
 
 .unidade-encontro-content{
-  border: 2px solid $preto;
   display: none;
   line-height: 1.3;
 }

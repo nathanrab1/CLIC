@@ -285,7 +285,7 @@ table {
 
 .t-6 {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
 }
 @media (min-width: 990px) {
   .t-6 {
@@ -326,7 +326,7 @@ body {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 66px;
 }
 
 a {
@@ -349,6 +349,34 @@ strong {
 
 .fx-row {
   flex-flow: row wrap;
+}
+
+.fx-col {
+  flex-flow: column;
+}
+
+.fx-jcsb {
+  justify-content: space-between;
+}
+
+.fx-aic {
+  align-items: center;
+}
+
+.g-10 {
+  gap: 10px;
+}
+
+.g-20 {
+  gap: 20px;
+}
+
+.g-25 {
+  gap: 25px;
+}
+
+.g-30 {
+  gap: 30px;
 }
 
 .col-50 {
@@ -379,6 +407,74 @@ strong {
   .col-d-66 {
     width: 66.666%;
   }
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.t-wys ul {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+.t-wys ul li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.t-wys ul li:nth-child(3n-2):before {
+  background: url(../imgs/i-vermelho.svg) no-repeat;
+  background-size: 100%;
+}
+.t-wys ul li:nth-child(3n-1):before {
+  background: url(../imgs/i-verde.svg) no-repeat;
+  background-size: 100%;
+}
+.t-wys ul li:nth-child(3n):before {
+  background: url(../imgs/i-azul.svg) no-repeat;
+  background-size: 100%;
+}
+.t-wys ul li:before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  transform: translateY(3px);
+}
+.t-wys ul li span {
+  width: calc(100% - 27px);
+}
+
+.p-25 {
+  padding: 25px 0;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.bb-preto {
+  border-bottom: 1px solid #2d2d2e;
+}
+
+.i-seta-dir:after {
+  content: "";
+  display: block;
+  transform: rotate(-135deg) translate(2px);
+  transition: transform ease 0.5s;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 7px;
+  height: 7px;
+}
+.i-seta-dir.open:after {
+  transform: rotate(-45deg) translate(0px, -3px);
 }
 
 .home-container {
@@ -556,13 +652,15 @@ strong {
     max-width: initial;
   }
 }
+.destaque iframe {
+  height: 56vw;
+}
 
 .lista-encontros {
   width: 80vw;
 }
 
 .unidade-encontro-content {
-  border: 2px solid #2d2d2e;
   display: none;
   line-height: 1.3;
 }

@@ -9,8 +9,16 @@ jQuery.noConflict();
     })
 
     $(".encontro-title").on("click", function(){ 
-        $(this).siblings(".unidade-encontro-content").slideToggle();
-    })
+        const content = $(this).siblings(".unidade-encontro-content");
+        
+        if (content.is(":visible")) {
+            content.stop().animate({ height: "toggle" }, 1000, "linear");
+        } else {
+            content.stop().animate({ height: "toggle" }, 1000, "linear");
+        }
+    
+        $(this).toggleClass("open");
+    });
 
 
 
