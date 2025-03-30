@@ -26,7 +26,7 @@ get_header();
     <p class="t-3 wrapper p-25"><?php echo get_field('texto_sobre_2'); ?></p>
     <p class="t-3 wrapper pb-25"><?php echo get_field('texto_sobre_3'); ?></p>
 
-    <section class="fx fx-col fx-d-row g-25 p-25 wrapper fx-jcsb">
+    <section class="fx fx-col fx-d-row p-25 wrapper fx-jcsb">
         <h2 class="t-3 t-bold col-d-25">O que fazemos?</h2>
         <h3 class="t-3 t-wys col-d-66"><?php echo get_field('texto_sobre_4'); ?></h3>
     </section>
@@ -36,7 +36,7 @@ get_header();
         <div class="t-3 t-wys col-d-66"><?php echo get_field('sobre_bullet_points'); ?></div>
     </section>
 
-    <p class="t-3 wrapper pb-45"><?php echo get_field('texto_sobre_6'); ?></p>
+    <p class="t-3 t-bold wrapper pb-45"><?php echo get_field('texto_sobre_6'); ?></p>
      
     
 

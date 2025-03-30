@@ -14,17 +14,9 @@
 
 get_header();
 ?>
-
-<div class="unidade-container">
-
-    <div class="unidade-titulo-div">
-        <h2 class="unidade-título">Equipe</h2>
-    </div>
-
-
-    <div class="participants-grid">
         
-        <div class="page-unidades-grid-container">
+        <h2 class="wrapper t-1 p-35">Equipe</h2>
+        <section class="wrapper fx fx-row g-30 pb-35">
             <?php
             // WP Query to fetch participants
             $args = array(
@@ -42,13 +34,14 @@ get_header();
 
             if ($participants->have_posts()) :
                 while ($participants->have_posts()) : $participants->the_post(); ?>
-                    <div class="grid-item">
+                    
+                    <div class="card-pessoa">
                         <?php if (has_post_thumbnail()) {
                             the_post_thumbnail('medium'); // Adjust size as needed
                         } ?>
-                        <h2><?php the_title(); ?></h2>
-                        <p><?php the_excerpt(); ?></p>
+                        <h2 class="t-3"><?php the_title(); ?></h2>
                     </div>
+
                 <?php endwhile;
             else : ?>
                 <p>No participants found.</p>
@@ -57,9 +50,7 @@ get_header();
             // Reset post data
             wp_reset_postdata();
             ?>
-        </div>
-    </div>
-</div>
+        </section>
 
 
 

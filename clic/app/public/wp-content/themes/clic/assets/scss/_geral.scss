@@ -20,6 +20,7 @@ body {
 }
 main{   
     padding-top: 66px;
+    min-height: calc( 100vh - 78px - 66px );
 }
 a {
     text-decoration: none;
@@ -138,6 +139,9 @@ strong{
 }
 .g-30{
     gap: 30px;                                                                                                          
+}
+.g-50{
+    gap: 50px;                                                                                                          
 }
 
 
