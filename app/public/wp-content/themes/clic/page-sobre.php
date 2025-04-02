@@ -27,12 +27,12 @@ get_header();
     <p class="t-4 lh-12 wrapper pb-25"><?php echo get_field('texto_sobre_3'); ?></p>
 
     <section class="fx fx-col fx-d-row p-25 wrapper fx-jcsb">
-        <h2 class="t-4 lh-12 t-bold col-d-25">O que fazemos?</h2>
+        <h2 class="t-3 lh-12 t-bold col-d-25">O que fazemos?</h2>
         <h3 class="t-4 lh-12 t-wys col-d-66"><?php echo get_field('texto_sobre_4'); ?></h3>
     </section>
 
     <section class="fx fx-col fx-d-row g-25 p-25 wrapper fx-jcsb">
-        <h2 class="t-4 lh-12 t-bold col-d-25 pt-10"><?php echo get_field('texto_sobre_5'); ?></h2>
+        <h2 class="t-3 lh-12 t-bold col-d-25 pt-10"><?php echo get_field('texto_sobre_5'); ?></h2>
         <div class="t-4 lh-12 t-wys col-d-66"><?php echo get_field('sobre_bullet_points'); ?></div>
     </section>
 

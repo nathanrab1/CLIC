@@ -22,7 +22,24 @@
 
 // Page-unidade
 
+article{
+  border: 1px solid $preto;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  @include dk-pq{
+    width: 309px;
+  }
+  a{
+    padding: 6px;
+    border: 1px solid $preto;
+    border-radius: 5px;
+  }
+}
 
+.card-wrapper{
+  width: 82%;
+  margin: 0 auto;
+}
 
 //Single unidade
 

@@ -17,9 +17,9 @@ get_header();
 ?>
 
 
-<h1 class="page-unidades-title t-1 t-azul"><?php the_title();?></h1>
+<h1 class="t-1 wrapper p-25"><?php the_title();?></h1>
 
-<div class="page-unidades-grid-container">
+<section class="fx fx-row wrapper g-30">
 	<?php
 	// WP Query to fetch unidades
 	$args = array(
@@ -30,27 +30,37 @@ get_header();
 
 	if ($unidades->have_posts()) :
 		while ($unidades->have_posts()) : $unidades->the_post(); ?>
-			<div class="page-unidades-grid-item">
-				
-				<h2 class="t-3 t-laranja" ><?php the_title(); ?></h2>
+			
+			<article class="">
 				
 				<?php $imagem_de_capa = get_field( 'imagem_de_capa' ); ?>
 				<?php if ( $imagem_de_capa ) : ?>
-					<img src="<?php echo esc_url( $imagem_de_capa['url'] ); ?>" alt="<?php echo esc_attr( $imagem_de_capa['alt'] ); ?>" />
+					<img class="p-10" src="<?php echo esc_url( $imagem_de_capa['url'] ); ?>" alt="<?php echo esc_attr( $imagem_de_capa['alt'] ); ?>" />
 				<?php endif; ?>
 
-				<p><span>Disciplina:</span> <?php the_field( 'disciplina' ); ?></p>
-				<p><span>Ferramenta principal:</span> <?php the_field( 'ferramenta_principal' ); ?></p>
-				<p><span>Anos:</span> <?php echo get_field('anos'); ?></p>
-				<div style="padding-top: 8px;"><a href=<?php the_permalink(); ?>>Conheça a unidade</a></div>
+				<ul class="card-wrapper fx fx-row g-10 p-10">
+                    <!-- Disciplina----------------------------------------------------->
+                    <li class="t-6 t-branco tag bg-azul"><?php echo get_field('disciplina'); ?></li>
+
+                    <!-- Anos----------------------------------------------------->
+                    <li class="t-6 t-branco tag bg-verde"><?php echo get_field('anos'); ?></li>
+            
+                    <!-- Duração----------------------------------------------------->
+                    <li class="t-6 t-branco tag bg-vermelho"><?php echo get_field('duracao'); ?></li>
+                </ul>
+
+				<h2 class="card-wrapper t-3 t-azul p-10" ><?php the_title(); ?></h2>
 				
-			</div>
+				<h3 class="card-wrapper t-4 p-10"><?php echo get_field( 'paragrafo_curto' ); ?></h3>
+				
+				<div class="card-wrapper pt-10 pb-25"><a class="t-preto bg-roxo-claro" href=<?php the_permalink(); ?>>Conheça a unidade</a></div>
+				
+			</article>
 		<?php endwhile;
 	else : ?>
 		<p>Nenhum resultado para a sua busca.</p>
 	<?php endif; ?>
-</div>
-<div style="height: 20px;"></div>
+</section>
 
 
 
