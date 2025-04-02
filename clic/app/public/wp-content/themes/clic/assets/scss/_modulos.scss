@@ -209,15 +209,28 @@
   align-items: center;
   img{
       border-radius: 50%;
-      width: 140px;
-      height: 140px;
+      width: 90px;
+      height: 90px;
+
+      @include dk-pq {
+        width: 140px;
+        height: 140px;
+      }
+
     }
     h2{
-      width: 140px;
+      width: 90px;
+      @include dk-pq {
+        width: 140px;
+      }
+      
       
     }
     p{
-      width: 200px;
+      width: 180px;
+      @include dk-pq {
+        width: 200px;
+      }
     }
 }
 

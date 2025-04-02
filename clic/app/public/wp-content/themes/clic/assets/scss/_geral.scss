@@ -149,6 +149,12 @@ strong{
 .g-60{
     gap: 60px;                                                                                                          
 }
+.g-d-30{
+    @include dk-pq{
+        gap: 30px;                                                                                                          
+    }
+}
+
 
 //colunas
 .col-50 {

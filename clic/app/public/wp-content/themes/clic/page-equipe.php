@@ -35,7 +35,7 @@ get_header();
             if ($participants->have_posts()) :
                 while ($participants->have_posts()) : $participants->the_post(); ?>
                     
-                    <div class="card-pessoa fx fx-row g-30">
+                    <div class="card-pessoa fx fx-row g-20 g-d-30">
                         
                         <div class="fx fx-col g-10">
                             <?php if (has_post_thumbnail()) {
