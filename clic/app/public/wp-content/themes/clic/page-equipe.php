@@ -16,7 +16,7 @@ get_header();
 ?>
         
         <h2 class="wrapper t-1 p-35">Equipe</h2>
-        <section class="wrapper fx fx-row g-30 pb-35">
+        <section class="wrapper fx fx-row g-50 pb-35">
             <?php
             // WP Query to fetch participants
             $args = array(
@@ -35,11 +35,16 @@ get_header();
             if ($participants->have_posts()) :
                 while ($participants->have_posts()) : $participants->the_post(); ?>
                     
-                    <div class="card-pessoa">
-                        <?php if (has_post_thumbnail()) {
-                            the_post_thumbnail('medium'); // Adjust size as needed
-                        } ?>
-                        <h2 class="t-3"><?php the_title(); ?></h2>
+                    <div class="card-pessoa fx fx-row g-30">
+                        
+                        <div class="fx fx-col g-10">
+                            <?php if (has_post_thumbnail()) {
+                                the_post_thumbnail('medium'); // Adjust size as needed
+                            } ?>
+                            <h2 class="t-4 t-bold t-center"><?php the_title(); ?></h2>
+                        </div>
+                        <h3 class="t-4"><?php the_excerpt(); ?></h3>
+                    
                     </div>
 
                 <?php endwhile;

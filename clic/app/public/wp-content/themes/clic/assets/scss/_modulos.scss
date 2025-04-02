@@ -206,7 +206,7 @@
 //Page Equipe
 
 .card-pessoa{
-
+  align-items: center;
   img{
       border-radius: 50%;
       width: 140px;
@@ -215,6 +215,9 @@
     h2{
       width: 140px;
       
+    }
+    p{
+      width: 200px;
     }
 }
 

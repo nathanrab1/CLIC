@@ -337,6 +337,10 @@ table {
   text-decoration: underline;
 }
 
+.lh-12 {
+  line-height: 1.2;
+}
+
 .ir {
   display: block;
   overflow: hidden;
@@ -489,8 +493,16 @@ strong {
   gap: 30px;
 }
 
+.g-40 {
+  gap: 40px;
+}
+
 .g-50 {
   gap: 50px;
+}
+
+.g-60 {
+  gap: 60px;
 }
 
 .col-50 {
@@ -624,6 +636,10 @@ strong {
 
 .pt-25 {
   padding-top: 25px;
+}
+
+.pt-10 {
+  padding-top: 10px;
 }
 
 @media (min-width: 990px) {
@@ -848,6 +864,9 @@ strong {
   list-style-position: inside;
 }
 
+.card-pessoa {
+  align-items: center;
+}
 .card-pessoa img {
   border-radius: 50%;
   width: 140px;
@@ -855,6 +874,9 @@ strong {
 }
 .card-pessoa h2 {
   width: 140px;
+}
+.card-pessoa p {
+  width: 200px;
 }
 
 footer {
