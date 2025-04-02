@@ -33,7 +33,12 @@ get_header();
 			<div class="page-unidades-grid-item">
 				
 				<h2 class="t-3 t-laranja" ><?php the_title(); ?></h2>
-				<iframe   src="https://www.youtube.com/embed/<?php the_field( 'codigo_youtube_video_curto' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+				
+				<?php $imagem_de_capa = get_field( 'imagem_de_capa' ); ?>
+				<?php if ( $imagem_de_capa ) : ?>
+					<img src="<?php echo esc_url( $imagem_de_capa['url'] ); ?>" alt="<?php echo esc_attr( $imagem_de_capa['alt'] ); ?>" />
+				<?php endif; ?>
+
 				<p><span>Disciplina:</span> <?php the_field( 'disciplina' ); ?></p>
 				<p><span>Ferramenta principal:</span> <?php the_field( 'ferramenta_principal' ); ?></p>
 				<p><span>Anos:</span> <?php echo get_field('anos'); ?></p>

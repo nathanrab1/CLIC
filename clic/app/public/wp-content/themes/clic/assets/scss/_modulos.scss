@@ -22,75 +22,7 @@
 
 // Page-unidade
 
-.unidade-container {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center horizontally */
-  text-align: center;     /* Center text within items */
-  // margin: 0 auto;        /* Center the container itself */ 
-  background-color: $off-white;
-  width: 100vw;
-}
 
-.participants-grid{
-  @include dk-pq{
-    max-width: 60%;
-    margin: 30px;
-  }
-}
-
-.page-unidades-grid-container {
- display: flex;
- flex-flow: column; /* 4 columns */
-  gap: 20px; /* Adjust spacing between items */
-  @include dk-pq {
-    flex-flow: row wrap;
-    justify-content: center;
-    
-  }
-
-}
-
-.page-unidades-grid-item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 412px;
-  border: 1px solid #ccc; /* Optional styling */
-  padding: 10px; /* Optional styling */
-  text-align: center; /* Center text */
-  @include dk-pq {
-    width:314px;
-    h2{
-      min-height: 53px;
-    }
-  }
-  span{
-    font-weight: 600;
-  }
-  iframe{
-    
-    border: #ccc;
-    @include dk-pq{
-      width: 300px;
-      height: 170px;
-    }
-  }
-  a{
-    
-    text-align: center;
-    padding: 12px 24px;
-    background-color: $azul;
-    width: 145px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 12px;
-    font-size: 16px;
-    text-align: center;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-}
 
 //Single unidade
 
