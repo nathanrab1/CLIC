@@ -3,17 +3,11 @@
   display: none;
   @include dk-pq{
     display: block;
-    width: 15%;
+    width: 25%;
   }
   
 }
 
-
-.home-paragrafo{
-  @include dk-pq{
-    width: 70%;
-  }
-}
 
 .home-imagem{
   img{
@@ -27,6 +21,14 @@
   }
 }
 
+.links-home{
+  a{
+    padding: 6px;
+    border: 1px solid $preto;
+    border-radius: 5px;
+  }
+  
+}
 
 
 //Page Sobre

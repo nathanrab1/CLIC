@@ -534,6 +534,12 @@ strong {
 }
 
 @media (min-width: 990px) {
+  .g-d-20 {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 990px) {
   .g-d-30 {
     gap: 30px;
   }
@@ -623,6 +629,12 @@ strong {
   }
 }
 
+@media (min-width: 990px) {
+  .col-d-100 {
+    width: 100%;
+  }
+}
+
 .tag {
   display: flex;
   flex-direction: row;
@@ -632,16 +644,16 @@ strong {
   border-radius: 12px;
 }
 
-.p-25 {
-  padding: 25px 0;
+.p-10 {
+  padding: 10px 0;
 }
 
 .p-15 {
   padding: 15px 0;
 }
 
-.p-10 {
-  padding: 10px 0;
+.p-25 {
+  padding: 25px 0;
 }
 
 .pb-25 {
@@ -694,6 +706,10 @@ strong {
   padding-top: 30px;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
 @media (min-width: 990px) {
   .pt-d-25 {
     padding-top: 25px;
@@ -736,13 +752,7 @@ strong {
 @media (min-width: 990px) {
   .home-image-logo {
     display: block;
-    width: 15%;
-  }
-}
-
-@media (min-width: 990px) {
-  .home-paragrafo {
-    width: 70%;
+    width: 25%;
   }
 }
 
@@ -754,6 +764,12 @@ strong {
 }
 .home-imagem h3 {
   width: 100%;
+}
+
+.links-home a {
+  padding: 6px;
+  border: 1px solid #2d2d2e;
+  border-radius: 5px;
 }
 
 .destaque-sobre iframe {
