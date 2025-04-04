@@ -85,6 +85,9 @@ $neue-haas: 'neue-haas';
 //text align
 .t-center{
     text-align: center;
+    @include dk-pq{
+        text-align: initial;
+    }
 }
 .t-right{
     text-align: right;

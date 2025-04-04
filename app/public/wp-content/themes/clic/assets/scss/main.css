@@ -227,6 +227,11 @@ table {
 .t-center {
   text-align: center;
 }
+@media (min-width: 990px) {
+  .t-center {
+    text-align: initial;
+  }
+}
 
 .t-right {
   text-align: right;
@@ -661,6 +666,10 @@ strong {
   padding-bottom: 25px;
 }
 
+.pb-10 {
+  padding-bottom: 10px;
+}
+
 .pb-45 {
   padding-bottom: 45px;
 }
@@ -679,6 +688,10 @@ strong {
 
 .pt-10 {
   padding-top: 10px;
+}
+
+.pt-30 {
+  padding-top: 30px;
 }
 
 @media (min-width: 990px) {
@@ -725,10 +738,6 @@ strong {
     display: block;
     width: 15%;
   }
-}
-
-.home-frase {
-  font-family: "neue-haas";
 }
 
 @media (min-width: 990px) {
