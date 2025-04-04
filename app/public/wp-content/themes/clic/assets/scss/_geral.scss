@@ -15,7 +15,7 @@ iframe{
 }
 body {
     font-family: $helvetica;
-    background: #F1F1F1;
+    background: $off-white;
     min-height:100vh;
 }
 main{   
@@ -35,6 +35,17 @@ strong{
     max-width:55900px;
     @include dk-pq{
         width:55%;
+        margin: 0 auto;
+        max-width: 1900px;
+       }
+}
+
+.wrapper-home{
+    width:82%;
+    margin: 0 auto;
+    max-width:55900px;
+    @include dk-pq{
+        width:80%;
         margin: 0 auto;
         max-width: 1900px;
        }
@@ -112,6 +123,12 @@ strong{
 
 .fx-jcc{
     justify-content: center;
+}
+
+.fx-d-aife{
+    @include dk-pq{
+        align-items: flex-end;
+    }
 }
 
 .fx-aic{
@@ -219,6 +236,12 @@ strong{
 .col-d-58 {
     @include dk-pq{
         width: 58%;
+    }
+}
+
+.col-d-60 {
+    @include dk-pq{
+        width: 60%;
     }
 }
 

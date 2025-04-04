@@ -14,30 +14,46 @@
 
 get_header();
 ?>
+<section class="wrapper fx fx-d-row fx-col fx-jcc fx-aife g-30">
+    <div>
+        <img class="home-image-logo" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo-clic.svg" alt="Logo">
+        <h1 class="t-1">Transforme o currículo a partir da computação</h1>  
+    </div>
+    <h2 class="t-3 home-paragrafo"><?php echo get_field( 'paragrafo_home' ); ?></h2>
+</section>
 
-<div class="home-container">
 
-    <div class="home-box">
-        <div class="home-titulo">
-            <!-- <h1 class="t-1 t-azul"><?php the_title();?></h1> -->
-            <!-- <h1><a href="<?php bloginfo('url')?>" class="ir logo-home" >CLIC</a></h1> -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/logo-clic.svg" alt="SVG Image" />
 
+<section class="wrapper-home home-imagem fx fx-row g-20 fx-jcc">
+    <div class="fx-d fx-row col-d-40 g-30 fx-aic">
+        <img class="col-d-30" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home_icon_1.svg" alt="icon 1">
+        <div class="col-d-60">
+            <h2 class="t-4 t-bold p-10"><?php echo get_field( 'titulo_paragrafo_icone_1' ); ?></h2>
+            <h3 class="t-4"><?php echo get_field( 'paragrafo_icone_1' ); ?></h3>
         </div>
-
-            <!-- Parágrafo Curto------------------------------------------->
-        <?php if(get_field('paragrafo_sobre_o_projeto')):?>
-            <h2 class="t-3 t-preto home-paragrafo"><?php echo get_field('paragrafo_sobre_o_projeto'); ?></h2>
-        <?php endif;?>
     </div>
-
-
-    <!-- Video aprensentando o projeto -->
-    <div class="video-container">
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/<?php echo get_field('codigo_youtube_video_apresentacao'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="fx-d fx-row col-d-40 g-30 fx-aic">
+        <img class="col-d-30" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home_icon_2.svg" alt="icon 2">
+        <div class="col-d-60">
+            <h2 class="t-4 t-bold p-10"><?php echo get_field( 'titulo_paragrafo_icone_2' ); ?></h2>
+            <h3 class="t-4"><?php echo get_field( 'paragrafo_icone_2' ); ?></h3>
+        </div>
     </div>
-        
-</div>
+    <div class="fx-d fx-row col-d-40 g-30 fx-aic">
+        <img class="col-d-30" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home_icon_3.svg" alt="icon 3">
+        <div class="col-d-60">
+            <h2 class="t-4 t-bold p-10"><?php echo get_field( 'titulo_paragrafo_icone_3' ); ?></h2>
+            <h3 class="t-4"><?php echo get_field( 'paragrafo_icone_3' ); ?></h3>
+        </div>
+    </div>
+    <div class="fx-d fx-row col-d-40 g-30 fx-aic">
+        <img class="col-d-30" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/home_icon_4.svg" alt="icon 4">
+        <div class="col-d-60">
+            <h2 class="t-4 t-bold p-10"><?php echo get_field( 'titulo_paragrafo_icone_4' ); ?></h2>
+            <h3 class="t-4"><?php echo get_field( 'paragrafo_icone_4' ); ?></h3>
+        </div>
+    </div>
+</section>
 
 <?php
 get_footer();

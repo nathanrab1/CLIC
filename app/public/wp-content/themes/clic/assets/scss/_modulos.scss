@@ -1,5 +1,35 @@
 // Page-home
+.home-image-logo{
+  display: none;
+  @include dk-pq{
+    display: block;
+    width: 15%;
+  }
+  
+}
 
+.home-frase{
+  font-family: $neue-haas;
+}
+
+
+.home-paragrafo{
+  @include dk-pq{
+    width: 70%;
+  }
+}
+
+.home-imagem{
+  img{
+    width: 25%;
+  }
+  h2{
+    width: 100%;
+  }
+  h3{
+    width: 100%;
+  }
+}
 
 
 
@@ -33,6 +63,9 @@ article{
     padding: 6px;
     border: 1px solid $preto;
     border-radius: 5px;
+  }
+  img{
+    width: 100%;
   }
 }
 

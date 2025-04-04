@@ -341,6 +341,10 @@ table {
   line-height: 1.2;
 }
 
+.f-neue {
+  font-family: "neue-haas";
+}
+
 .ir {
   display: block;
   overflow: hidden;
@@ -357,7 +361,7 @@ iframe {
 
 body {
   font-family: "helvetica";
-  background: #F1F1F1;
+  background: #F2F2F2;
   min-height: 100vh;
 }
 
@@ -382,6 +386,19 @@ strong {
 @media (min-width: 990px) {
   .wrapper {
     width: 55%;
+    margin: 0 auto;
+    max-width: 1900px;
+  }
+}
+
+.wrapper-home {
+  width: 82%;
+  margin: 0 auto;
+  max-width: 55900px;
+}
+@media (min-width: 990px) {
+  .wrapper-home {
+    width: 80%;
     margin: 0 auto;
     max-width: 1900px;
   }
@@ -461,6 +478,12 @@ strong {
 
 .fx-jcc {
   justify-content: center;
+}
+
+@media (min-width: 990px) {
+  .fx-d-aife {
+    align-items: flex-end;
+  }
 }
 
 .fx-aic {
@@ -589,6 +612,12 @@ strong {
   }
 }
 
+@media (min-width: 990px) {
+  .col-d-60 {
+    width: 60%;
+  }
+}
+
 .tag {
   display: flex;
   flex-direction: row;
@@ -688,6 +717,36 @@ strong {
   transform: rotate(-45deg) translate(0px, -3px);
 }
 
+.home-image-logo {
+  display: none;
+}
+@media (min-width: 990px) {
+  .home-image-logo {
+    display: block;
+    width: 15%;
+  }
+}
+
+.home-frase {
+  font-family: "neue-haas";
+}
+
+@media (min-width: 990px) {
+  .home-paragrafo {
+    width: 70%;
+  }
+}
+
+.home-imagem img {
+  width: 25%;
+}
+.home-imagem h2 {
+  width: 100%;
+}
+.home-imagem h3 {
+  width: 100%;
+}
+
 .destaque-sobre iframe {
   height: 56vw;
 }
@@ -717,6 +776,9 @@ article a {
   padding: 6px;
   border: 1px solid #2d2d2e;
   border-radius: 5px;
+}
+article img {
+  width: 100%;
 }
 
 .card-wrapper {
