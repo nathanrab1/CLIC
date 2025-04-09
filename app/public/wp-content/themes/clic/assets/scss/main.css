@@ -678,6 +678,10 @@ strong {
   padding-bottom: 25px;
 }
 
+.pb-50 {
+  padding-bottom: 50px;
+}
+
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -767,9 +771,9 @@ strong {
 }
 
 .links-home a {
-  padding: 6px;
+  padding: 10px;
   border: 1px solid #2d2d2e;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .destaque-sobre iframe {
@@ -809,6 +813,15 @@ article img {
 .card-wrapper {
   width: 82%;
   margin: 0 auto;
+}
+
+.filtro-categoria {
+  font-size: 16px;
+}
+@media (min-width: 990px) {
+  .filtro-categoria {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 990px) {

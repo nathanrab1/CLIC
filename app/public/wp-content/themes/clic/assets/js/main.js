@@ -20,6 +20,20 @@ jQuery.noConflict();
         $(this).toggleClass("open");
     });
 
+    jQuery(document).ready(function($) {
+        $('.filtro-categoria').on('change', function() {
+          var filtro = $(this).val();
+          
+          if (filtro === 'todos') {
+            $('.item-filtro').show();
+          } else {
+            $('.item-filtro').hide();
+            $('.item-filtro[disciplina="' +  filtro + '"]').show();
+          }
+        });
+      });
+
+      
 
 
 })(jQuery);
