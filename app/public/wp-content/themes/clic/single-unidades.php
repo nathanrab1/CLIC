@@ -68,13 +68,13 @@ get_header();
         $count = 1; 
     ?>
         <section class="fx fx-col g-25 p-25 wrapper">
-            <h1 class="t-3 t-bold">Encontros</h1>
+            <h1 class="t-2 t-bold">Encontros</h1>
             <ul class="fx fx-col g-10">
             <?php while ( have_rows( 'encontros' ) ) : the_row(); ?>
                 <li class="encontro-container">
 
                     <div class="encontro-title bb-preto i-seta-dir fx fx-row fx-aic fx-jcsb">
-                        <h2 class="t-4">Encontro <?php echo $count; $count++;?></h2>
+                        <h2 class="t-3">Encontro <?php echo $count; $count++;?></h2>
                     </div>
 
                     <div class="unidade-encontro-content p-15 wrapper-sanfona">

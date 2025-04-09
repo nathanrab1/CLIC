@@ -62,7 +62,7 @@ header{
     nav {
         position: absolute;
         padding: 5%;
-        background: $cinza;
+        background: $off-white;
         padding: 20px 5%;
         left: -50vw;
         top: 66px;
@@ -70,6 +70,7 @@ header{
         box-sizing: border-box;
         height: calc(100vh - 47px);
         transition: left ease 0.5s;
+        font-weight: 600;
         @include dk-pq {
             position: relative;
             background: none;

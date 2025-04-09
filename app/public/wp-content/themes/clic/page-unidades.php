@@ -46,11 +46,8 @@ get_header();
     <!-- dropdown -->
 	</div>
 
-
-
-
     
-	<div class="fx fx-row g-30">	
+	<div class="fx fx-row g-30 pb-35">	
 		<?php
 		if ($unidades->have_posts()) :
 			while ($unidades->have_posts()) : $unidades->the_post(); ?>
