@@ -18,7 +18,7 @@ get_header();
         <div class="wrapper fx fx-col col-d-45 g-30">
             <!-- Título------->
             <?php if(get_field('titulo')):?>
-                <h1 class="t-1"><?php echo get_field('titulo'); ?></h1>
+                <h1 class="t-1 t-regular t-neue"><?php echo get_field('titulo'); ?></h1>
             <?php endif;?>
         
             <div class="fx fx-col g-20">
@@ -45,19 +45,19 @@ get_header();
       
         <section class="fx fx-col fx-d-row g-25 p-25 wrapper fx-jcsb">
         <!-- Compreensões Centrais----------------------------------->
-            <h1 class="t-3 t-bold col-d-25 pt-10">Compreensões Centrais</h1>
+            <h1 class="t-3 t-bold col-d-25 pt-10 ">Compreensões Centrais</h1>
             <div class="t-4 t-wys col-d-66"><?php echo get_field('ideias_centrais'); ?></div>
         </section>
         
         <section class="fx fx-col fx-d-row g-25 p-25 wrapper fx-jcsb">
         <!-- Habilidades BNCC----------------------------------->
-            <h1 class="t-3 t-bold col-d-25 pt-10">Habilidades BNCC</h1>
+            <h1 class="t-3 t-bold col-d-25 pt-10 ">Habilidades BNCC</h1>
             <div class="t-4 t-wys col-d-66"><?php echo get_field('habilidades_bncc'); ?></div>
         </section>
 
         <section class="fx fx-col fx-d-row g-25 p-25 wrapper fx-jcsb">
         <!-- Evidências de Aprendizagem----------------------------------->
-            <h1 class="t-3   t-bold col-d-25 pt-10">Evidências de Aprendizagem</h1>
+            <h1 class="t-3   t-bold col-d-25 pt-10 ">Evidências de Aprendizagem</h1>
             <div class="t-4 t-wys col-d-66"><?php echo get_field('evidencias_de_aprendizagem'); ?></div>   
         </section>
   
@@ -80,7 +80,7 @@ get_header();
                     <div class="unidade-encontro-content p-15 wrapper-sanfona">
                         
                         <section class="fx-d fx-d-row fx-jcsb p-d-15">
-                            <h2 class=" t-2 t-bold pb-8 col-d-25"><?php echo get_sub_field( 'titulo' ); ?></h2>  
+                            <h2 class=" t-2 pb-8 col-d-25 t-regular t-neue"><?php echo get_sub_field( 'titulo' ); ?></h2>  
                             <iframe class="col-d-50"  src="https://www.youtube.com/embed/<?php echo get_sub_field( 'codigo_youtube' ); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
                         </section>
 

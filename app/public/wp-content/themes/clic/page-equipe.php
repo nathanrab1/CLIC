@@ -15,7 +15,7 @@
 get_header();
 ?>
         
-        <h2 class="wrapper t-1 p-35">Equipe</h2>
+        <h2 class="wrapper t-1 p-35 t-regular t-neue">Equipe</h2>
         <section class="wrapper fx fx-row g-50 pb-35">
             <?php
             // WP Query to fetch participants

@@ -24,14 +24,31 @@
 }
 
 @font-face {
-    font-family: 'neue-haas';
-    src: url('../fonts/Neue Haas Grotesk Display Pro 65 Medium.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'neue';
+    src: url('../fonts/HelveticaNeueBold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: 'neue';
+    src: url('../fonts/HelveticaNeueMedium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+  // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
 
 $helvetica: 'helvetica';
 $neue-haas: 'neue-haas';
+$neue: 'neue';
+
+.t-neue{
+    font-family: $neue;
+}
 
 //MIXINS FONTES
 @mixin t-1{

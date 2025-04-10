@@ -55,7 +55,7 @@ article{
   border-radius: 15px;
   background-color: #FFFFFF;
   @include dk-pq{
-    width: 309px;
+    width: calc(33.33% - 22px);
   }
   a{
     padding: 6px;

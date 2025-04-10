@@ -30,20 +30,27 @@ get_header();
 
 
 	<div class="pb-25 t-4">
-	<!-- dropdown -->
-		<?php
-		if ($unidades->have_posts()) : ?>
-			<select name="" class="filtro-categoria">
-			<?php
-				?>
-				<option value="todos">Todas as disciplinas</option>
-				<?php
-				while ($unidades->have_posts()) : $unidades->the_post(); ?>
-				<option value="<?php echo get_field('disciplina'); ?>"><?php echo get_field('disciplina'); ?></option>
-				<?php endwhile;?>
-			</select>
-		<?php endif; ?>
-    <!-- dropdown -->
+<!-- dropdown -->
+<?php
+if ($unidades->have_posts()) :
+    $disciplinas_exibidas = array(); // array para armazenar disciplinas únicas
+    ?>
+    <select name="" class="filtro-categoria">
+        <option value="todos">Todas as disciplinas</option>
+        <?php
+        while ($unidades->have_posts()) : $unidades->the_post();
+            $disciplina = get_field('disciplina');
+            if (!in_array($disciplina, $disciplinas_exibidas)) {
+                $disciplinas_exibidas[] = $disciplina; // adiciona ao array para evitar repetições
+                ?>
+                <option value="<?php echo esc_attr($disciplina); ?>"><?php echo esc_html($disciplina); ?></option>
+                <?php
+            }
+        endwhile;
+        ?>
+    </select>
+<?php endif; ?>
+<!-- dropdown -->
 	</div>
 
     

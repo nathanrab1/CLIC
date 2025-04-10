@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-    <h1 class="t-1 wrapper pt-25">Sobre o CLIC</h1>
+    <h1 class="t-1 wrapper pt-25 t-regular t-neue">Sobre o CLIC</h1>
     
     <section class="fx-d fx-d-row destaque-sobre wrapper-d pt-25 fx-jcsb">
         <h2 class="t-3 lh-12 col-d-33 wrapper-m pb-25 "><?php echo get_field('texto_sobre_1'); ?></h2>

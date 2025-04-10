@@ -215,11 +215,21 @@ table {
   font-style: normal;
 }
 @font-face {
-  font-family: "neue-haas";
-  src: url("../fonts/Neue Haas Grotesk Display Pro 65 Medium.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "neue";
+  src: url("../fonts/HelveticaNeueBold.otf") format("opentype");
+  font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: "neue";
+  src: url("../fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+.t-neue {
+  font-family: "neue";
+}
+
 .t-upper {
   text-transform: uppercase;
 }
@@ -714,6 +724,10 @@ strong {
   padding-top: 50px;
 }
 
+b {
+  font-weight: bold;
+}
+
 @media (min-width: 990px) {
   .pt-d-25 {
     padding-top: 25px;
@@ -798,7 +812,7 @@ article {
 }
 @media (min-width: 990px) {
   article {
-    width: 309px;
+    width: calc(33.33% - 22px);
   }
 }
 article a {
