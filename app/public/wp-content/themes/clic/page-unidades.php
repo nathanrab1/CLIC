@@ -17,7 +17,7 @@ get_header();
 ?>
 
 
-<h1 class="t-1 wrapper p-25"><?php the_title();?></h1>
+<h1 class="t-1 wrapper p-25 t-regular-bold"><?php the_title();?></h1>
 
 <section class="wrapper">
 	<?php
@@ -63,7 +63,7 @@ if ($unidades->have_posts()) :
 					
 					<?php $imagem_de_capa = get_field( 'imagem_de_capa' ); ?>
 					<?php if ( $imagem_de_capa ) : ?>
-						<img class="p-10" src="<?php echo esc_url( $imagem_de_capa['url'] ); ?>" alt="<?php echo esc_attr( $imagem_de_capa['alt'] ); ?>" />
+						<img class="pb-10" src="<?php echo esc_url( $imagem_de_capa['url'] ); ?>" alt="<?php echo esc_attr( $imagem_de_capa['alt'] ); ?>" />
 					<?php endif; ?>
 
 					<ul class="card-wrapper fx fx-row g-10 p-10">

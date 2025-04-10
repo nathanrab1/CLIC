@@ -67,7 +67,7 @@ get_header();
     <?php if ( have_rows( 'encontros' ) ) :
         $count = 1; 
     ?>
-        <section class="fx fx-col g-25 p-25 wrapper">
+        <section class="fx fx-col g-25 pt-25 pb-55 wrapper">
             <h1 class="t-2 t-bold">Encontros</h1>
             <ul class="fx fx-col g-10">
             <?php while ( have_rows( 'encontros' ) ) : the_row(); ?>

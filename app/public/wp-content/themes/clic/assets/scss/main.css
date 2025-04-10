@@ -700,6 +700,10 @@ strong {
   padding-bottom: 45px;
 }
 
+.pb-55 {
+  padding-bottom: 55px;
+}
+
 .pb-8 {
   padding-bottom: 8px;
 }
@@ -822,6 +826,8 @@ article a {
 }
 article img {
   width: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
 .card-wrapper {
