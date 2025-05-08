@@ -1,0 +1,18 @@
+.react-grid-layout {
+  margin: 0 auto;
+}
+
+.itsec-card-grid--moving .itsec-card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.react-grid-item {
+  transition: none;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: rgb(211, 211, 211);
+  opacity: 0.35;
+}/*# sourceMappingURL=style.css.map */

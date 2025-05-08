@@ -1067,6 +1067,7 @@ header nav {
   position: absolute;
   padding: 5%;
   background: #F2F2F2;
+  border: 1px solid #2d2d2e;
   padding: 20px 5%;
   left: -50vw;
   top: 66px;
@@ -1086,6 +1087,7 @@ header nav {
     width: initial;
     height: initial;
     transition: left ease 0.5s;
+    border: none;
   }
 }
 header nav.nav-open {

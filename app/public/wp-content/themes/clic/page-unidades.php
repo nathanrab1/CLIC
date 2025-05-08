@@ -17,7 +17,7 @@ get_header();
 ?>
 
 
-<h1 class="t-1 wrapper p-25 t-regular-bold"><?php the_title();?></h1>
+<h1 class="t-1 wrapper p-25 t-regular t-neue"><?php the_title();?></h1>
 
 <section class="wrapper">
 	<?php
@@ -25,6 +25,8 @@ get_header();
 	$args = array(
 		'post_type' => 'unidades', // Your custom post type
 		'posts_per_page' => -1, // Get all unidades
+		'orderby' => 'title',
+    	'order' => 'ASC'
 	);
 	$unidades = new WP_Query($args); ?>
 
